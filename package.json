@@ -50,9 +50,8 @@
     "zlib": "^1.0.5"
   },
   "scripts": {
-    "start": "node server.js",
-    "install-deps": "npm install",
-    "build": "npm run install-deps && react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
