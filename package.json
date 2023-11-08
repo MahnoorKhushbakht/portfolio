@@ -51,7 +51,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "build": "npm install && npm run build ",
+    "install-deps": "npm install",
+    "build": "npm run install-deps && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
