@@ -12,7 +12,7 @@ const dbUrl = process.env.REACT_APP_DB_URL
 mongoose.connect(dbUrl);
 app.use(express.static(path.join(__dirname,'./build')))
 app.get("*",function(req,res){
-  res.sendFile(path.join(__dirname,'./src/index.html'))
+  res.sendFile(path.join(__dirname,'./build/index.html'))
 })
 app.post('/contactme', (req, res) => {
     console.log('Received POST request to /contactme');
