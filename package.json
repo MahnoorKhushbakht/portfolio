@@ -51,10 +51,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "backend":"nodemon server.js",
-    "frontend": "npm start",
-    "both": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "build": "react-scripts build ",
+    "build": "npm install && npm run build ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
