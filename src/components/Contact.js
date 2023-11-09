@@ -30,9 +30,12 @@ const SignupSchema = Yup.object().shape({
 const Contact = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const outerTheme = useTheme();
   const apiUrl = process.env.REACT_APP_API_URL;
   const handleSubmit = (formData, resetFormFields) => {
+    setIsLoading(true);
+  
     axios
       .post(`${apiUrl}/contactme`, formData)
       .then((res) => {
@@ -41,8 +44,12 @@ const Contact = () => {
       })
       .catch((error) => {
         setIsError(true);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
+  
   const cardStyle = {
     backgroundColor: '#4F4A45',
     borderRadius: '16px',
@@ -215,24 +222,48 @@ const Contact = () => {
                     variant="contained"
                     disabled={!isValid}
                   >
-                    Submit
+                    {isLoading ? 'Submitting...' : 'Submit'}
                   </Button>
                   <Snackbar
                     open={isSuccess}
                     autoHideDuration={6000}
                     onClose={() => setIsSuccess(false)}
-                  >
-                    <Alert severity="success" onClose={() => setIsSuccess(false)}>
-                      Form submitted successfully!
+                    anchorOrigin={{ vertical: 'top', horizontal: 'center' }} 
+                  >         
+                    <Alert severity="success" 
+    sx={{
+      backgroundColor: '#4F4A45',  
+      color: '#F6F1EE', 
+      fontFamily: "'Courier New', Courier, monospace",          
+      '& .MuiAlert-icon': {
+        color: 'green',        
+      },
+      width: '100%',
+    }}
+                     onClose={() => setIsSuccess(false)}>
+                     Thanks for Contacting!
                     </Alert>
                   </Snackbar>
                   <Snackbar
                     open={isError}
                     autoHideDuration={6000}
                     onClose={() => setIsError(false)}
+                    anchorOrigin={{ vertical: 'top', horizontal: 'center' }} 
                   >
-                    <Alert severity="error" onClose={() => setIsError(false)}>
-                      Error submitting the form.
+                      <Alert
+    severity="error"
+    sx={{
+      backgroundColor: '#4F4A45',  
+      color: '#F6F1EE',
+      fontFamily: "'Courier New', Courier, monospace",           
+      '& .MuiAlert-icon': {
+        color: 'red',  
+      },
+      width: '100%',
+    }}
+    onClose={() => setIsError(false)}
+  >
+                    There was an issue with your submission. Please try again later.
                     </Alert>
                   </Snackbar>
                 </Form>
