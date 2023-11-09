@@ -5,7 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import GitHubIcon from '@mui/icons-material/GitHub';
+
 export default function SocialNav() {
   const handleFacebookClick = () => {
     window.open('https://www.facebook.com/mahnoor.khushbakht?mibextid=ZbWKwL', '_blank');
@@ -22,9 +22,7 @@ export default function SocialNav() {
     window.location.href = 'mailto:mahnoorkhushbakht@gmail.com';
   };
  
-  const handleGithubClick = () => {
-    window.open('https://github.com/MahnoorKhushbakht', '_blank');
-  };
+
 
 
   return (
