@@ -31,10 +31,10 @@ const Contact = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
   const outerTheme = useTheme();
-
+  const apiUrl = process.env.REACT_APP_API_URL;
   const handleSubmit = (formData, resetFormFields) => {
     axios
-      .post('http://localhost:3000/contactme', formData)
+      .post(`${apiUrl}/contactme`, formData)
       .then((res) => {
         setIsSuccess(true);
         resetFormFields();
