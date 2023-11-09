@@ -41,9 +41,6 @@ export default function SocialNav() {
       <Fab size='small' aria-label="Mail" onClick={handleMailClick}>
         <MailOutlineIcon />
       </Fab>
-      <Fab size='small' aria-label="Github" onClick={handleGithubClick}>
-        <GitHubIcon />
-      </Fab>
     </Box>
   );
 }
