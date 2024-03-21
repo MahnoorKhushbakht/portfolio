@@ -14,7 +14,7 @@ export default function Rating() {
         <ChakraProvider>
             <div id='skills' style={{ height: '100vh', display: 'flex', flexDirection:'column',alignItems: 'center', justifyContent: 'center' }}>
             <Text
-        style={{textAlign: 'left',color:'#F6F1EE',marginBottom:'30px' }}
+        style={{textAlign: 'left',color:'#F6F1EE',margin:'40px 0' }}
         className="animate__animated animate__fadeInUp"
         color='#F6F1EE' 
         fontSize= {{ base: "25px", md: "40px", lg: "45px" }}
