@@ -57,9 +57,9 @@ export default function AboutMe() {
         </Box>
       </Container>
     </CenteredContainer>
-    <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)', color:'#d6d6d6'}}>
+    <div className='text-center p-4' style={{ backgroundColor: '#4f4a452a', color:'#d6d6d6'}}>
     <SocialNav/>
-        © 2023 Copyright: MahnoorKhushbakht
+       <p style={{fontSize:'12px'}}>© 2023 Copyright: MahnoorKhushbakht</p>
     </div>
     </div>
   );
