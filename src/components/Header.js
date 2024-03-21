@@ -36,7 +36,7 @@ function Header() {
       width="35"
       height="35"
       className="d-inline-block align-top"
-      alt="Profile Image"
+      alt="avatar"
       style={{ borderRadius: '50%' }} 
     />
         </Navbar.Brand>
@@ -48,6 +48,12 @@ function Header() {
             </Nav.Link>
             <Nav.Link href="#services" style={linkStyles}>
               Services
+            </Nav.Link>
+            <Nav.Link href="#skills" style={linkStyles}>
+              Skills
+            </Nav.Link>
+            <Nav.Link href="#review" style={linkStyles}>
+             Review
             </Nav.Link>
             <Nav.Link href="#contact" style={linkStyles}>
               Contact

@@ -5,6 +5,9 @@ import Contact from './components/Contact';
 import Services from './components/Services';
 import AboutMe from './components/AboutMe';
 import Header from './components/Header';
+import Reviews from './components/Reviews';
+import Rating from './components/Rating';
+
 
 
 function App() {
@@ -13,6 +16,8 @@ function App() {
         <Header/>
         <Home/>
         <Services/>
+        <Rating/>
+        <Reviews/>
         <Contact/>
         <AboutMe/>
       </div>

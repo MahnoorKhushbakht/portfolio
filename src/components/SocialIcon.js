@@ -1,6 +1,5 @@
-import { Stack} from "@chakra-ui/react";
-import { FaFacebook, FaInstagram, FaLinkedin,FaEnvelope, FaGithub } from 'react-icons/fa';
-import { IconButton } from '@chakra-ui/react';
+import { Stack, IconButton } from "@chakra-ui/react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 
 export default function SocialIcon() {
   const handleFacebookClick = () => {
@@ -14,19 +13,31 @@ export default function SocialIcon() {
   const handleLinkedinClick = () => {
     window.open('http://www.linkedin.com/in/mahnoorkhushbakht', '_blank');
   };
+
   const handleMailClick = () => {
     window.location.href = 'mailto:mahnoorkhushbakht@gmail.com';
   };
+
   const handleGithubClick = () => {
     window.open('https://github.com/MahnoorKhushbakht', '_blank');
   };
+
   return (
-<Stack spacing={4} direction='row'>
+    <Stack
+    spacing={4}
+    marginRight={4}
+    direction='column'
+    position="fixed" // Stick to the viewport
+    right={0} // Position on the right side
+    top="50%"
+    transform="translateY(-50%)" // Center vertically
+    zIndex="banner" // Ensure it's above most elements
+  >
       <IconButton
-        isRound={true}
         variant='solid'
         aria-label='Facebook'
-        colorScheme='facebook'
+        backgroundColor='#4F4A45'
+        color='#F6F1EE'
         fontSize='20px'
         size='md'
         icon={<FaFacebook />}
@@ -34,9 +45,9 @@ export default function SocialIcon() {
       />
 
       <IconButton
-        isRound={true}
         variant='solid'
-        colorScheme='pink'
+        backgroundColor='#4F4A45'
+        color='#F6F1EE'
         aria-label='Instagram'
         fontSize='20px'
         size='md'
@@ -45,36 +56,37 @@ export default function SocialIcon() {
       />
 
       <IconButton
-        isRound={true}
         variant='solid'
-        colorScheme='linkedin'
+        backgroundColor='#4F4A45'
+        color='#F6F1EE'
         aria-label='LinkedIn'
         fontSize='20px'
         size='md'
         icon={<FaLinkedin />}
         onClick={handleLinkedinClick}
       />
+
       <IconButton
-        isRound={true}
         variant='solid'
-        color='black'
-        backgroundColor='white'
+        backgroundColor='#4F4A45'
+        color='#F6F1EE'
         aria-label='Github'
         fontSize='25px'
         size='md'
-        icon={<FaGithub/>}
+        icon={<FaGithub />}
         onClick={handleGithubClick}
       />
-    <IconButton
-        isRound={true}
+
+      <IconButton
         variant='solid'
-        colorScheme='red'
+        backgroundColor='#4F4A45'
+        color='#F6F1EE'
         aria-label='Mail'
         fontSize='20px'
         size='md'
-        icon={<FaEnvelope/>}
+        icon={<FaEnvelope />}
         onClick={handleMailClick}
       />
- </Stack>
+    </Stack>
   );
 }

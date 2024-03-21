@@ -2,7 +2,6 @@ import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import BackgroundExp from './BackgroundExp';
-import ProfileImage from '../images/ProfileImage.jpeg';
 import SocialNav from './SocialNav';
 
 const CenteredContainer = styled('div')({
@@ -23,12 +22,7 @@ const Container = styled('div')({
   alignItems: 'center',
 });
 
-const Image = styled('img')({
-  borderRadius: '30%',
-  width: '250px', 
-  height: '250px',
-  margin: '0 5px',
-});
+
 
 
 export default function AboutMe() {
@@ -45,7 +39,7 @@ export default function AboutMe() {
             alignItems: 'center',
           }}
         >
-          <Image src={ProfileImage} alt="Profile Image" />
+
           <BackgroundExp/>
         </Box>
         <Box
