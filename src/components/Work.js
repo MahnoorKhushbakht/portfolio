@@ -13,10 +13,10 @@ export default function Work() {
     return (
         <div id='work' height='100vh'>
             <ChakraProvider>
-                <Box display="flex" justifyContent="center" flexDirection={{ sm: 'column', md: 'row' }} alignItems="center" minHeight="100vh" marginTop='130px' marginBottom='20px' spacing="4">
+                <Box display="flex" justifyContent="center" flexDirection={{ base:'column',sm: 'column', md: 'row' }} alignItems="center" minHeight="100vh" marginTop='130px' marginBottom='20px' spacing="4">
                     {data.map((item, index) => (
                         <Box key={index} mx={{ base: 'auto', md: '4' }} mb={{ base: '4', md: '0' }}>
-                            <Card maxW='sm'  backgroundColor="#4F4A45" >
+                            <Card maxW='sm' backgroundColor="#4F4A45" >
                                 <CardBody>
                                     <Image
                                         src={item.src}
