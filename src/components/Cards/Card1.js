@@ -1,6 +1,4 @@
-import React, { useState} from "react";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import DevicesIcon from "@mui/icons-material/Devices";
@@ -8,10 +6,6 @@ import Fab from "@mui/material/Fab";
 import '../css/Services.css'
 function Card1() {
 
-  const [isShowMore, setIsShowMore] = useState(false);
-  const toggleReadMoreLess = () => {
-    setIsShowMore(!isShowMore);
-  };
 
 
   return (
@@ -22,7 +16,7 @@ function Card1() {
         sx={{
           flexGrow: 1,
           display: { xs: '400', md: '800' },
-          backgroundColor: '#F6F1EE',
+          backgroundColor: 'transparent',
           borderRadius: '16px',
           width: '90%',
         }}
@@ -37,35 +31,15 @@ function Card1() {
         >
           <DevicesIcon />
         </Fab>
-        <Typography variant="h6" style={{ color: "#4F4A45", marginBottom: "10px", fontFamily:"'Courier New', Courier, monospace"}}>
-          Virtual Assistant
+        <Typography variant="h6" style={{ color: '#F6F1EE', marginBottom: "10px", fontFamily:"'Courier New', Courier, monospace"}}>
+        Attention to Detail
         </Typography>
-        <Typography variant="body1" style={{ color: "#4F4A45",fontFamily:"'Courier New', Courier, monospace" }}>
-          As a Virtual Assistant, I conducted meetings with cross-functional teams to achieve goals regardless of geographical boundaries.
+        <Typography variant="body1" style={{ color: '#F6F1EE',fontFamily:"'Courier New', Courier, monospace" }}>
+        I pay close attention to the finer points of web development, ensuring quality and precision in all tasks.
         </Typography>
 
-        {isShowMore && (
-          <Typography variant="body1" style={{ color: "#4F4A45" ,fontFamily: "'Courier New', Courier, monospace",}}>
-            Locked agreements for Company Creation in countries like France or Germany. Conducted research and analysis to provide valuable insights in decision making.
-          </Typography>
-        )}
 
-<Button
-                onClick={toggleReadMoreLess}
-                sx={{
-                  marginTop:'5px',
-                  fontFamily: "'Courier New', Courier, monospace",
-                  background: '#4F4A45',
-                  color: '#F6F1EE',
-                  '&:hover': {
-                    background: '#ED7D31',
-                    color: '#4F4A45',
-                  },
-                }}
-                variant="filled"
-              >
-                {isShowMore ? "Read Less" : "Read More"}
-              </Button>
+
       </CardContent>
     </Card>
 

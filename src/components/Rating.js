@@ -31,7 +31,7 @@ export default function Rating() {
 
                 <Flex wrap="wrap" justify="center" align="center">
                     {skills.map((skill, index) => (
-                        <Box key={index} p={5} display="flex" flexDirection="column" alignItems="center" width={{ base: '50%', md: '33%', lg: '20%' }}>
+                        <Box key={index} p={5} display="flex" flexDirection="column" alignItems="center" width={{ base: '50%', md: '33%', lg: '30%' }}>
                             <CircularProgress determinate value={skill.value} color='#ED7D31' size="50px">
                                 <CircularProgressLabel color="#F6F1EE">{skill.value}%</CircularProgressLabel>
                             </CircularProgress>

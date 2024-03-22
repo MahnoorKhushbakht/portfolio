@@ -1,11 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import * as React from 'react';
 import ProfileImage from '../images/ProfileImage.jpeg';
 import './css/Header.css'
-function Header() {
 
+function Header() {
 
   const transparentNavbarStyles = {
     position: 'fixed',
@@ -13,12 +14,9 @@ function Header() {
     zIndex: 999,
   };
 
-
-
   const linkStyles = {
     color: '#F6F1EE',
-    fontSize: '18spx',
-    textTransform: 'uppercase',
+    fontSize: '18px',
   };
 
   return (
@@ -30,15 +28,15 @@ function Header() {
       className='header'
     >
       <Container>
-      <Navbar.Brand href="#home">
-      <img
-      src={ProfileImage}
-      width="35"
-      height="35"
-      className="d-inline-block align-top"
-      alt="avatar"
-      style={{ borderRadius: '50%' }} 
-    />
+        <Navbar.Brand href="#home">
+          <img
+            src={ProfileImage}
+            width="35"
+            height="35"
+            className="d-inline-block align-top"
+            alt="avatar"
+            style={{ borderRadius: '50%' }} 
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -46,23 +44,24 @@ function Header() {
             <Nav.Link href="#home" style={linkStyles}>
               Home
             </Nav.Link>
+            <Nav.Link href="#work" style={linkStyles}>
+              Experience
+            </Nav.Link>
             <Nav.Link href="#services" style={linkStyles}>
               Services
             </Nav.Link>
-            <Nav.Link href="#skills" style={linkStyles}>
-              Skills
-            </Nav.Link>
-            <Nav.Link href="#review" style={linkStyles}>
-             Review
-            </Nav.Link>
-            <Nav.Link href="#contact" style={linkStyles}>
-              Contact
-            </Nav.Link>
-            <Nav.Link href="#about" style={linkStyles}>
-              About Me
-            </Nav.Link>
-            </Nav>
-            </Navbar.Collapse>  
+            <NavDropdown title="More" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#skills">Skills</NavDropdown.Item>
+              <NavDropdown.Item href="#review">
+                Review
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#contact">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="#about">
+                About
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>  
       </Container>
     </Navbar>
   );

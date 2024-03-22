@@ -10,7 +10,8 @@ export default function Heading() {
             <Box 
             display="flex"
             textAlign="center"
-            alignItems="center"     
+            alignItems="center"    
+            marginBottom={50} 
             justifyContent="flex-start" >
       <Show breakpoint='(min-width: 600px)'>
       <HeadingTextMD/>

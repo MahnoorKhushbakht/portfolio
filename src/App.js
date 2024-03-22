@@ -2,12 +2,13 @@ import './App.css';
 import Home from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './components/Contact';
-import Services from './components/Services';
+
 import AboutMe from './components/AboutMe';
 import Header from './components/Header';
 import Reviews from './components/Reviews';
 import Rating from './components/Rating';
-
+import Work from './components/Work';
+import Services from './components/Services';
 
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
         <Header/>
         <Home/>
         <Services/>
-        <Rating/>
+        <Work/>
         <Reviews/>
+        <Rating/>
         <Contact/>
         <AboutMe/>
       </div>
