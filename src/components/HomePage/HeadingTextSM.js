@@ -54,7 +54,7 @@ export default function HeadingText_SM(){
 <Typewriter marginTop='5px'
  onInit={(typewriter) => {
      typewriter
-         .typeString("Web Designer")
+         .typeString("Website Developer")
          .pauseFor(1000)
          .deleteAll()
          .typeString("Let's Grow Together!!")

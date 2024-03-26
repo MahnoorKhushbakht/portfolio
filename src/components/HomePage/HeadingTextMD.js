@@ -48,7 +48,7 @@ return(
 <Typewriter 
  onInit={(typewriter) => {
      typewriter
-         .typeString("Web Designer")
+         .typeString("Website Developer")
          .pauseFor(1000)
          .deleteAll()
          .typeString("Let's Grow Together!!")
