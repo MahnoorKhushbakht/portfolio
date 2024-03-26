@@ -15,7 +15,7 @@ export default function Work() {
             <ChakraProvider>
                 <Box display="flex" justifyContent="center" flexDirection={{ base: 'column', sm: 'column', md: 'row' }} alignItems="center" minHeight="100vh" marginTop='130px' marginBottom='20px' spacing="4">
                     {data.map((item, index) => (
-                        <Box key={index} mx={{ base: 'auto', md: '4' }} mb={{ base: '4', md: '0' }} ml={{ base: '8', md: '0' }} mr={{ base: '8', md: '0' }}>
+                        <Box key={index} mx={{ base: 'auto', md: '4' }} mb={{ base: '4', md: '0' }} ml={{ base: '8', md: '4' }} mr={{ base: '8', md: '4' }}>
                             <Card maxW='sm' backgroundColor="#4F4A45" >
                                 <CardBody>
                                     <Image
