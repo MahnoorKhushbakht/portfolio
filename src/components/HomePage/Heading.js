@@ -3,10 +3,11 @@ import React from 'react';
 import {Box,Show} from '@chakra-ui/react';
 import HeadingTextMD from './HeadingTextMD';
 import HeadingTextSM from './HeadingTextSM';
+import 'aos/dist/aos.css';
 export default function Heading() {
     return (
         <div>
-            <Box height="100vh">
+            <Box height="100vh" data-aos="fade-down" data-aos-delay='100'>
             <Box 
             display="flex"
             textAlign="center"

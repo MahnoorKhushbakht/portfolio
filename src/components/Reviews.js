@@ -9,7 +9,7 @@ export default function Reviews(){
     <ChakraProvider>
   <div id="review" height="100vh" maxHeight={'100vh'}>
   <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh" marginTop='100px'  marginBottom='20px'>
-    <Card data-aos="fade-up" data-aos-delay='100' backgroundColor='#F6F1EE' sx={{width: { base: '85%', sm: '85%', md: '60%', lg: '50%' }}}>
+    <Card data-aos="fade-down" data-aos-delay='100' backgroundColor='#F6F1EE' sx={{width: { base: '85%', sm: '85%', md: '60%', lg: '50%' }}}>
   <CardHeader>
     <Flex spacing='2'>
       <Flex flex='1' gap='2' alignItems='left' flexWrap='wrap'>

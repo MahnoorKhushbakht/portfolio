@@ -1,4 +1,4 @@
-import { Stack, IconButton,Box } from "@chakra-ui/react";
+import { IconButton,Box } from "@chakra-ui/react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 
 export default function SocialIcon() {

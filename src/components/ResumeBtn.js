@@ -1,7 +1,6 @@
 import Resume from '../Docs/MahnoorKhushbakht_CV.pdf';
 import { Button, CircularProgress, Box } from '@chakra-ui/react';
 import * as React from 'react';
-import { DownloadIcon } from '@chakra-ui/icons';
 
 export default function ResumeBtn() {
   const [loading, setLoading] = React.useState(false);

@@ -2,7 +2,6 @@ import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import BackgroundExp from './BackgroundExp';
-import SocialNav from './SocialNav';
 
 const CenteredContainer = styled('div')({
   display: 'flex',

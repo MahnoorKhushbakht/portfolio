@@ -69,7 +69,7 @@ const Contact = () => {
         <Card
           variant="outlined"
           sx={cardStyle}
-          data-aos="zoom-in" data-aos-delay='100' 
+          data-aos="fade-down" data-aos-delay='100' 
         >
 
           <CardContent>

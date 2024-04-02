@@ -10,7 +10,7 @@ import project2 from '../images/project2.jpeg';
 import { Grid } from '@mui/material';
 import { Divider } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import 'aos/dist/aos.css';
+
 
 export default function ImgMediaCard() {
   const handlePortfolioClick = () => {
@@ -32,17 +32,17 @@ export default function ImgMediaCard() {
   return (
     <div id='projects'>
       <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" minHeight="100vh">
-      <Typography  data-aos="fade-up" data-aos-delay='100'  width='100%' sx={{ fontSize: { xs: '20px', md: '25px' }}} color={'white'} variant="h5" fontWeight='bold' marginBottom={'10px'} fontFamily="'Courier New', Courier, monospace">
+      <Typography  data-aos="fade-down" data-aos-delay='100'  width='100%' sx={{ fontSize: { xs: '20px', md: '25px' }}} color={'white'} variant="h5" fontWeight='bold' marginBottom={'10px'} fontFamily="'Courier New', Courier, monospace">
         Projects
       </Typography>
       <Divider sx={{ backgroundColor: '#ED7D31' }} />
 
-      <Typography data-aos="fade-up" data-aos-delay='100' width='50%' sx={{ fontSize: { xs: '15px', md: '20px' }}} color={'rgba(255, 255, 255, 0.856)'} variant="h4" fontStyle='italic' marginBottom={'10px'} fontFamily="'Courier New', Courier, monospace">
+      <Typography data-aos="fade-down" data-aos-delay='100' width='50%' sx={{ fontSize: { xs: '15px', md: '20px' }}} color={'rgba(255, 255, 255, 0.856)'} variant="h4" fontStyle='italic' marginBottom={'10px'} fontFamily="'Courier New', Courier, monospace">
       Develop a dynamic and responsive website with modern design elements.
       </Typography>
         <Grid container spacing={1} justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={6}>
-            <Card  data-aos="fade-up" data-aos-delay='100' sx={{ maxWidth: '80%', backgroundColor: '#ccccd8', margin: 'auto' }}>
+            <Card  data-aos="fade-down" data-aos-delay='100' sx={{ maxWidth: '80%', backgroundColor: '#ccccd8', margin: 'auto' }}>
               <CardMedia
                 component="img"
                 alt="project1"
@@ -56,7 +56,7 @@ export default function ImgMediaCard() {
             </Card>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <Card data-aos="fade-up" data-aos-delay='100' sx={{maxWidth: '80%', backgroundColor: '#ebc521', margin: 'auto' }}>
+            <Card data-aos="fade-down" data-aos-delay='100' sx={{maxWidth: '80%', backgroundColor: '#ebc521', margin: 'auto' }}>
               <CardMedia
                 component="img"
                 alt="project2"
