@@ -41,14 +41,11 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" style={linkStyles}>
-              Home
+            <Nav.Link href="#background" style={linkStyles}>
+              Background
             </Nav.Link>
-            <Nav.Link href="#work" style={linkStyles}>
-              Experience
-            </Nav.Link>
-            <Nav.Link href="#services" style={linkStyles}>
-              Services
+            <Nav.Link href="#projects" style={linkStyles}>
+              Projects
             </Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown">
               <NavDropdown.Item href="#skills">Skills</NavDropdown.Item>

@@ -4,6 +4,7 @@ import Fab from '@mui/material/Fab';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import '../css/Services.css'
+import 'aos/dist/aos.css';
 function Card2() {
 
 
@@ -18,6 +19,7 @@ function Card2() {
     <Card
       variant="outlined"
       className="animate__animated animate__flipInX card"
+      data-aos="slide-down" data-aos-delay='100' 
       sx={{
         flexGrow: 1,
         display: { xs: '400', md: '800' },

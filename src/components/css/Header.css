@@ -1,9 +1,11 @@
 .header {
     background-color: transparent;
+    backdrop-filter: blur(10px); 
   }
   @media (max-width: 576px) {
     .header {
-      background-color: #4F4A45;
+      background-color: transparent;
+      backdrop-filter: blur(20px); 
     }
   }
   

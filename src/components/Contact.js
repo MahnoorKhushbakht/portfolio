@@ -64,11 +64,12 @@ const Contact = () => {
 
   return (
     <div id='contact' height='100vh'>
-      <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh" marginTop='100px'  marginBottom='20px'>
+      <Box display="flex" justifyContent="center" alignItems="center"  maxHeight={'100vh'} minHeight="100vh" marginTop='100px'  marginBottom='20px'>
         <Card
           variant="outlined"
           sx={cardStyle}
         >
+
           <CardContent>
             <Typography color={'#F6F1EE'} variant="h4" marginBottom={'10px'} fontFamily= "'Courier New', Courier, monospace">
               Contact Me

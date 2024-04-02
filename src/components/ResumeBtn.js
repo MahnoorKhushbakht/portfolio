@@ -40,20 +40,20 @@ export default function ResumeBtn() {
           justifyContent='left'
           marginBottom='20px'
           sx={{
-            background: '#4F4A45',
+            borderColor: '#4F4A45',
             color: '#ED7D31',
             '&:hover': {
               background: '#F6F1EE',
               color: '#4F4A45',
             },
           }}
-          variant='contained'
+          variant='outline'
           disabled={loading}
         >
           {!loading && (
             <>
               Resume
-              <DownloadIcon marginRight='2px' w={6} h={6} color='#4F4A45.500' />
+             
             </>
           )}
           {loading && (

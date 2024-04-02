@@ -6,7 +6,7 @@ export default function BackgroundExp() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '80%', height: '80%', marginLeft: '10px' }}>
       <ChakraProvider>
-        <Box textAlign={{ base: 'center', md: 'left' }}>
+        <Box textAlign={{ base: 'center', md: 'center' }}>
           <Heading fontSize={30} color={'#F6F1EE'} mb={4} fontFamily="'Courier New', Courier, monospace">
             About Me
           </Heading>

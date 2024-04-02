@@ -6,7 +6,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 export default function Reviews(){
   return(
     <ChakraProvider>
-  <div id="review" height="100vh" >
+  <div id="review" height="100vh" maxHeight={'100vh'}>
   <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh" marginTop='100px'  marginBottom='20px'>
     <Card backgroundColor='#F6F1EE' sx={{width: { base: '85%', sm: '85%', md: '60%', lg: '50%' }}}>
   <CardHeader>

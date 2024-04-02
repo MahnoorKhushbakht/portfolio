@@ -4,6 +4,7 @@ import DrawIcon from '@mui/icons-material/Draw';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import '../css/Services.css'
+import 'aos/dist/aos.css';
 function Card3() {
 
 
@@ -13,6 +14,7 @@ function Card3() {
       <Card
         variant="outlined"
         className="animate__animated animate__flipInX card"
+        data-aos="slide-down" data-aos-delay='100' 
         sx={{
           flexGrow: 1,
           display: { xs: '400', md: '800' },

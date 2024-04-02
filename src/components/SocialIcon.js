@@ -1,4 +1,4 @@
-import { Stack, IconButton } from "@chakra-ui/react";
+import { Stack, IconButton,Box } from "@chakra-ui/react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 
 export default function SocialIcon() {
@@ -23,70 +23,61 @@ export default function SocialIcon() {
   };
 
   return (
-    <Stack
-    spacing={4}
-    marginRight={4}
-    direction='column'
-    position="fixed" // Stick to the viewport
-    right={0} // Position on the right side
-    top="50%"
-    transform="translateY(-50%)" // Center vertically
-    zIndex="banner" // Ensure it's above most elements
-  >
+    <Box  display={'flex'} justifyContent={'left'}>
       <IconButton
-        variant='solid'
+        variant='outlined'
         aria-label='Facebook'
-        backgroundColor='#4F4A45'
         color='#F6F1EE'
         fontSize='20px'
+        margin='0 6px'
         size='md'
         icon={<FaFacebook />}
         onClick={handleFacebookClick}
       />
 
       <IconButton
-        variant='solid'
-        backgroundColor='#4F4A45'
+        variant='outlined'
         color='#F6F1EE'
         aria-label='Instagram'
         fontSize='20px'
+        margin='0 6px'
         size='md'
         icon={<FaInstagram />}
         onClick={handleInstagramClick}
       />
 
       <IconButton
-        variant='solid'
-        backgroundColor='#4F4A45'
+        variant='outlined'
         color='#F6F1EE'
         aria-label='LinkedIn'
         fontSize='20px'
+        margin='0 6px'
         size='md'
         icon={<FaLinkedin />}
         onClick={handleLinkedinClick}
       />
 
       <IconButton
-        variant='solid'
-        backgroundColor='#4F4A45'
+        variant='outlined'
         color='#F6F1EE'
         aria-label='Github'
-        fontSize='25px'
+        fontSize='20px'
+        margin='0 6px'
         size='md'
         icon={<FaGithub />}
         onClick={handleGithubClick}
       />
 
       <IconButton
-        variant='solid'
-        backgroundColor='#4F4A45'
+        variant='outlined'
         color='#F6F1EE'
         aria-label='Mail'
+        margin='0 6px'
         fontSize='20px'
         size='md'
         icon={<FaEnvelope />}
         onClick={handleMailClick}
       />
-    </Stack>
+</Box>
   );
 }

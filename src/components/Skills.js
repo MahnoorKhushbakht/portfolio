@@ -4,8 +4,8 @@ import Card1 from './Cards/Card1';
 import Card2 from './Cards/Card2';
 import Card3 from './Cards/Card3';
 import Container from '@mui/material/Container';
-
-export default function Variants() {
+import 'aos/dist/aos.css';
+export default function Skills() {
   const containerStyles = {
     display: 'flex',
     flexDirection: 'column',
@@ -17,13 +17,14 @@ export default function Variants() {
 
 
   return (
-    <div id="services" sx={containerStyles}>
+    <div id="skills" sx={containerStyles}>
       <Container >
         <Stack
           direction={{ xs: 'column', sm: 'row' }}
           spacing={2}
           justifyContent="center"
           alignItems="center"
+          maxHeight={'100vh'}
           sx={{ margin: '0 2%' }} 
         >
           <Card1 />

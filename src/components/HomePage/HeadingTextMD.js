@@ -13,7 +13,7 @@ export default function HeadingText_MD(){
 
 return(
 <>
-<Box maxW="50rem" marginStart='50px'marginTop="120px" >
+<Box maxW="50rem" marginStart='50px'marginTop="100px" >
 <Box maxW="50rem">
     <Heading
         style={{ fontSize: '42px', textAlign: 'left' ,fontFamily:"'Courier New', Courier, monospace"}}
