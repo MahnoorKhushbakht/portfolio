@@ -1,7 +1,7 @@
 import { Card, CardBody, Box, Image, Stack, Heading, Text, Button, ChakraProvider } from '@chakra-ui/react';
 import gd from '../images/gd.jpeg';
 import amz from '../images/amz.jpeg';
-import wb from '../images/wb.JPG';
+import wb from '../images/luckyShrub.JPG';
 import 'aos/dist/aos.css';
 export default function Background() {
     const data = [

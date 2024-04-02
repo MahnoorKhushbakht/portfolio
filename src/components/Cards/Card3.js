@@ -13,8 +13,6 @@ function Card3() {
 
       <Card
         variant="outlined"
-        className="animate__animated animate__flipInX card"
-        data-aos="slide-down" data-aos-delay='100' 
         sx={{
           flexGrow: 1,
           display: { xs: '400', md: '800' },
@@ -22,6 +20,8 @@ function Card3() {
           borderRadius: '16px',
           width: '90%',
         }}
+        data-aos="fade-down" data-aos-delay='100' 
+
       >
       <CardContent>
                   <Fab style={{ backgroundColor: '#ED7D31', color:'#F6F1EE', marginBottom: '20px' }}>
@@ -32,7 +32,7 @@ function Card3() {
                   </Typography>
 
 <Typography variant='body1' style={{  color: '#F6F1EE',fontFamily:"'Courier New', Courier, monospace"  }}>
-My flexible approach enables me to navigate evolving project requirements with ease, ensuring successful adaptation to dynamic environments.
+I adapt to changing project needs easily, ensuring success in dynamic environments.
       </Typography>
 
 

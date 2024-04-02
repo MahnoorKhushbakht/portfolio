@@ -27,7 +27,7 @@ const Container = styled('div')({
 
 export default function AboutMe() {
   return (
-    <div id='about'>
+    <div id='about' minHeight='100vh'>
     <CenteredContainer>
       <Container>
         <Box
@@ -58,8 +58,8 @@ export default function AboutMe() {
       </Container>
     </CenteredContainer>
     <div className='text-center p-4' style={{ backgroundColor: '#4f4a452a', color:'#d6d6d6'}}>
-    <SocialNav/>
-       <p style={{fontSize:'12px'}}>© 2023 Copyright: MahnoorKhushbakht</p>
+       <p style={{fontSize:'16px'}}>© 2023 Copyright</p>
+       <p style={{fontSize:'16px'}}>Created By Mahnoor Khushbakht</p>
     </div>
     </div>
   );

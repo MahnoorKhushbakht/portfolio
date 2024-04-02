@@ -13,15 +13,13 @@ function Card1() {
 
       <Card
         variant="outlined"
-        data-aos="slide-down" data-aos-delay='100' 
-        className="animate__animated animate__flipInX card"
         sx={{
           flexGrow: 1,
           display: { xs: '400', md: '800' },
           backgroundColor: 'transparent',
-          borderRadius: '16px',
           width: '90%',
         }}
+        data-aos="fade-down" data-aos-delay='100' 
       >
       <CardContent>
         <Fab
@@ -37,7 +35,7 @@ function Card1() {
         Attention to Detail
         </Typography>
         <Typography variant="body1" style={{ color: '#F6F1EE',fontFamily:"'Courier New', Courier, monospace" }}>
-        I pay close attention to the finer points of web development, ensuring quality and precision in all tasks.
+       Diligent attention to detail ensures high-quality results.
         </Typography>
 
 

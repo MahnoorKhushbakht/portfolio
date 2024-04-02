@@ -12,7 +12,8 @@ import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import axios from 'axios';
 import { Typography } from '@mui/material';
-
+import SocialNav from './SocialNav';
+import 'aos/dist/aos.css';
 
 const SignupSchema = Yup.object().shape({
   firstName: Yup.string()
@@ -52,9 +53,9 @@ const Contact = () => {
   
   const cardStyle = {
     backgroundColor: '#4F4A45',
-    borderRadius: '16px',
+    border: '2px solid #ED7D31',
     maxWidth: '80%',
-    width: '80%',
+    width: '75%',
   };
 
   const textStyle = {
@@ -68,12 +69,14 @@ const Contact = () => {
         <Card
           variant="outlined"
           sx={cardStyle}
+          data-aos="zoom-in" data-aos-delay='100' 
         >
 
           <CardContent>
             <Typography color={'#F6F1EE'} variant="h4" marginBottom={'10px'} fontFamily= "'Courier New', Courier, monospace">
               Contact Me
             </Typography>
+            <SocialNav/>
             <Formik
               initialValues={{
                 firstName: '',
@@ -95,7 +98,7 @@ const Contact = () => {
                         type="text"
                         as={TextField}
                         label="First Name"
-                        variant="standard"
+                        variant="filled"
                         margin="dense"
                         fullWidth
                         error={touched.firstName && errors.firstName}
@@ -125,7 +128,7 @@ const Contact = () => {
                         type="text"
                         as={TextField}
                         label="Last Name"
-                        variant="standard"
+                        variant="filled"
                         margin="dense"
                         fullWidth
                         error={touched.lastName && errors.lastName}
@@ -154,7 +157,7 @@ const Contact = () => {
                         type="text"
                         as={TextField}
                         label="Email"
-                        variant="standard"
+                        variant="filled"
                         margin="dense"
                         fullWidth
                         error={touched.email && errors.email}
@@ -184,8 +187,7 @@ const Contact = () => {
                         as={TextField}
                         label="Message"
                         multiline
-                        rows={4}
-                        variant="standard"
+                        variant="filled"
                         margin="dense"
                         fullWidth
                         sx={{ ...textStyle, color: '#F6F1EE' }}
@@ -211,16 +213,17 @@ const Contact = () => {
                   <Button
                     type="submit"
                     sx={{
-                      background: '#ED7D31',
+                      border:'2px solid #F6F1EE',
                       color: '#F6F1EE',
                       '&:hover': {
                         background: '#F6F1EE',
                         color: '#4F4A45',
                       },
                       marginTop: '16px',
+                      marginBottom:'4px',
                       fontFamily: "'Courier New', Courier, monospace",
                     }}
-                    variant="contained"
+                    variant="outlined"
                     disabled={!isValid}
                   >
                     {isLoading ? 'Submitting...' : 'Submit'}

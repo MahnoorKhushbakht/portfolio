@@ -26,7 +26,7 @@ export default function SocialNav() {
 
 
   return (
-    <Box sx={{ '& > :not(style)': { m: 2 } }}>
+    <Box sx={{ '& > :not(style)': { m: 1 } }}>
       <Fab size='small' aria-label="Facebook" onClick={handleFacebookClick}>
         <FacebookIcon />
       </Fab>

@@ -1,87 +1,75 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import 'aos/dist/aos.css';
 import project1 from '../images/project1.jpeg';
 import project2 from '../images/project2.jpeg';
-import { Container } from '@mui/material';
-import { Carousel} from 'react-bootstrap';
+import { Grid } from '@mui/material';
+import { Divider } from '@mui/material';
+import Typography from '@mui/material/Typography';
 import 'aos/dist/aos.css';
+
 export default function ImgMediaCard() {
-    const handlePortfolioClick = () => {
-        window.open('https://promiseemmanuel.onrender.com/', '_blank');
-      };
-    
-      const handleMarketingClick = () => {
-        window.open('  https://neskomedia.onrender.com/', '_blank');
-      };
-      const handleGitPortfolioClick = () => {
-        window.open('https://github.com/MahnoorKhushbakht/pe_portfolio_website', '_blank');
-      };
-    
-      const handleGitMarketingClick = () => {
-        window.open('https://github.com/MahnoorKhushbakht/marketing-agency', '_blank');
-      };
+  const handlePortfolioClick = () => {
+    window.open('https://promiseemmanuel.onrender.com/', '_blank');
+  };
+
+  const handleMarketingClick = () => {
+    window.open('https://neskomedia.onrender.com/', '_blank');
+  };
+
+  const handleGitPortfolioClick = () => {
+    window.open('https://github.com/MahnoorKhushbakht/pe_portfolio_website', '_blank');
+  };
+
+  const handleGitMarketingClick = () => {
+    window.open('https://github.com/MahnoorKhushbakht/marketing-agency', '_blank');
+  };
+
   return (
-    <div id='projects' height='100vh' maxHeight={'100vh'}>
-      <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh"maxHeight={'100vh'} >
-      <Carousel controls={false} indicators={true} style={{ width: '100%', maxWidth: '500px'}}>
-          <Carousel.Item>
-        <Container>
-          <Card sx={{ maxWidth: 605, backgroundColor: '#ccccd8' }}>
-            <CardMedia
-              component="img"
-              alt="project1"
-              height="140"
-              image={project1}
-            />
-            <CardContent>
-              <Typography variant="body2" color="text.secondary" textAlign={'left'} fontFamily="'Courier New', Courier, monospace">
-                <strong>Project Description:</strong> It is built using React.js for the frontend and Node.js for the backend. MongoDB is used for storing Contact Information.
-                <br />
-                <strong>Key Achievements:</strong> Created the website as per requirements.
-                <br />
-                <strong>Your Role:</strong> I was responsible for the entire development lifecycle, including design, frontend and backend development, and deployment.
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button style={{fontFamily:"'Courier New', Courier, monospace"}}  size="small" onClick={handlePortfolioClick}>View</Button>
-              <Button style={{fontFamily:"'Courier New', Courier, monospace"}}  size="small" onClick={handleGitPortfolioClick}>Learn More</Button>
-            </CardActions>
-          </Card>
-        </Container>
-        </Carousel.Item>
-        <Carousel.Item>
-        <Container>
-          <Card sx={{ maxWidth: 605, backgroundColor: '#ebc521' }}>
-            <CardMedia
-              component="img"
-              alt="project2"
-              height="140"
-              image={project2}
-            />
-            <CardContent>
-              <Typography variant="body2" color="text.secondary" textAlign={'left'} fontFamily="'Courier New', Courier, monospace">
-               
-<strong>Project Description:</strong> Developed a web application utilizing React.js for the frontend and Node.js for the backend, with MongoDB serving as the database for Contact Information storage.
-<br />
-<strong>Key Achievements:</strong> Successfully designed and implemented the website to meet project specifications.
-<br />
-<strong>Your Role:</strong> Led the entire development lifecycle, encompassing design, frontend and backend development, and deployment, ensuring seamless execution from conception to delivery.
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button style={{fontFamily:"'Courier New', Courier, monospace"}} size="small" onClick={handleMarketingClick}>View</Button>
-              <Button style={{fontFamily:"'Courier New', Courier, monospace"}}  size="small" onClick={handleGitMarketingClick}>Learn More</Button>
-            </CardActions>
-          </Card>
-        </Container>
-        </Carousel.Item>
-        </Carousel>
+    <div id='projects'>
+      <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" minHeight="100vh">
+      <Typography  data-aos="fade-up" data-aos-delay='100'  width='100%' sx={{ fontSize: { xs: '20px', md: '25px' }}} color={'white'} variant="h5" fontWeight='bold' marginBottom={'10px'} fontFamily="'Courier New', Courier, monospace">
+        Projects
+      </Typography>
+      <Divider sx={{ backgroundColor: '#ED7D31' }} />
+
+      <Typography data-aos="fade-up" data-aos-delay='100' width='50%' sx={{ fontSize: { xs: '15px', md: '20px' }}} color={'rgba(255, 255, 255, 0.856)'} variant="h4" fontStyle='italic' marginBottom={'10px'} fontFamily="'Courier New', Courier, monospace">
+      Develop a dynamic and responsive website with modern design elements.
+      </Typography>
+        <Grid container spacing={1} justifyContent="center" alignItems="center">
+          <Grid item xs={12} sm={6}>
+            <Card  data-aos="fade-up" data-aos-delay='100' sx={{ maxWidth: '80%', backgroundColor: '#ccccd8', margin: 'auto' }}>
+              <CardMedia
+                component="img"
+                alt="project1"
+                height="240"
+                image={project1}
+              />
+              <CardActions>
+                <Button style={{ fontFamily: "'Courier New', Courier, monospace" }} size="small" onClick={handlePortfolioClick}>View</Button>
+                <Button style={{ fontFamily: "'Courier New', Courier, monospace" }} size="small" onClick={handleGitPortfolioClick}>Learn More</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Card data-aos="fade-up" data-aos-delay='100' sx={{maxWidth: '80%', backgroundColor: '#ebc521', margin: 'auto' }}>
+              <CardMedia
+                component="img"
+                alt="project2"
+                height="240"
+                image={project2}
+              />
+              <CardActions>
+                <Button style={{ fontFamily: "'Courier New', Courier, monospace" }} size="small" onClick={handleMarketingClick}>View</Button>
+                <Button style={{ fontFamily: "'Courier New', Courier, monospace" }} size="small" onClick={handleGitMarketingClick}>Learn More</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+        </Grid>
       </Box>
     </div>
   );

@@ -3,12 +3,13 @@ import { BiLike, BiChat,BiShare } from 'react-icons/bi'
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import ClientImage from '../images/ClientImage.jpeg';
 import { ChakraProvider } from '@chakra-ui/react';
+import 'aos/dist/aos.css';
 export default function Reviews(){
   return(
     <ChakraProvider>
   <div id="review" height="100vh" maxHeight={'100vh'}>
   <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh" marginTop='100px'  marginBottom='20px'>
-    <Card backgroundColor='#F6F1EE' sx={{width: { base: '85%', sm: '85%', md: '60%', lg: '50%' }}}>
+    <Card data-aos="fade-up" data-aos-delay='100' backgroundColor='#F6F1EE' sx={{width: { base: '85%', sm: '85%', md: '60%', lg: '50%' }}}>
   <CardHeader>
     <Flex spacing='2'>
       <Flex flex='1' gap='2' alignItems='left' flexWrap='wrap'>

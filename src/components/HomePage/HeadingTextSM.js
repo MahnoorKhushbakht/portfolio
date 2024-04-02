@@ -45,8 +45,8 @@ export default function HeadingText_SM(){
           </Highlight>
         </Heading>
         <Text
-          style={{ fontSize: '30px' }}
-          fontSize="xl"
+          style={{ fontSize: '25px' }}
+          fontSize="lg"
           className="animate__animated animate__fadeInUp"
           color='#F6F1EE' 
           fontFamily="'Courier New', Courier, monospace"

@@ -18,8 +18,6 @@ function Card2() {
   return (
     <Card
       variant="outlined"
-      className="animate__animated animate__flipInX card"
-      data-aos="slide-down" data-aos-delay='100' 
       sx={{
         flexGrow: 1,
         display: { xs: '400', md: '800' },
@@ -27,6 +25,7 @@ function Card2() {
         borderRadius: '16px',
         width: '90%',
       }}
+      data-aos="fade-down" data-aos-delay='100' 
     >
       <CardContent>
       <Fab
@@ -42,7 +41,7 @@ function Card2() {
         Time Management
         </Typography>
         <Typography variant='body1' style={textStyle}>
-        I effectively manage my time, balancing multiple projects and deadlines to deliver high-quality results efficiently.
+        I effectively manage my time to deliver high-quality results efficiently.
         </Typography>
 
 
