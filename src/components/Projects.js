@@ -56,7 +56,7 @@ export default function ImgMediaCard() {
             </Card>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <Card data-aos="fade-down" data-aos-delay='100' sx={{maxWidth: '80%', backgroundColor: '#ebc521', margin: 'auto' }}>
+            <Card data-aos="fade-down" data-aos-delay='150' sx={{maxWidth: '80%', backgroundColor: '#ebc521', margin: 'auto' }}>
               <CardMedia
                 component="img"
                 alt="project2"
