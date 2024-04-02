@@ -8,7 +8,10 @@ import 'aos/dist/aos.css';
 
 AOS.init({
   duration: 800, 
-  easing: 'ease-in-out',
+  easing: 'ease',
+  once: false, 
+  mirror: false, 
+  anchorPlacement: 'top-bottom', 
 });
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
