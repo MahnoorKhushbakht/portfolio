@@ -2,7 +2,7 @@ import Resume from '../Docs/MahnoorKhushbakht_CV.pdf';
 import { Button, CircularProgress, Box } from '@chakra-ui/react';
 import * as React from 'react';
 
-export default function ResumeBtn() {
+export default function Btn() {
   const [loading, setLoading] = React.useState(false);
   const [progress, setProgress] = React.useState(0);
 
@@ -30,23 +30,24 @@ export default function ResumeBtn() {
   };
 
   return (
-    <>
+    <Box  display={'flex'} flexDirection={'row'} margin='0 5px'>
       <a href={Resume} download>
         <Button
           onClick={handleDownload}
-          size='lg'
+          size={{ base: 'md', md: 'lg' }}
           display='flex'
           justifyContent='left'
           marginBottom='20px'
+          fontFamily="Helvetica, Arial"
           sx={{
-            borderColor: '#4F4A45',
-            color: '#ED7D31',
+           background: '#6c58a3',
+            color: 'white',
             '&:hover': {
-              background: '#F6F1EE',
-              color: '#4F4A45',
+              background: 'white',
+              color: '#6c58a3',
             },
           }}
-          variant='outline'
+          variant='contained'
           disabled={loading}
         >
           {!loading && (
@@ -62,6 +63,25 @@ export default function ResumeBtn() {
           )}
         </Button>
       </a>
-    </>
+      <Button
+        size={{ base: 'md', md: 'lg' }}
+          display='flex'
+          justifyContent='left'
+          marginLeft='8px'
+          fontFamily="Helvetica, Arial"
+          sx={{
+           background: '#6c58a3',
+            color: 'white',
+            '&:hover': {
+              background: 'white',
+              color: '#6c58a3',
+            },
+          }}
+        >
+  <a href="#contact" style={{ textDecoration: 'none', color: 'inherit' }}>
+    Contact Me
+    </a>
+        </Button>
+    </Box>
   );
 }

@@ -24,17 +24,17 @@ function Card1() {
       <CardContent>
         <Fab
           style={{
-            backgroundColor: "#ED7D31",
-            color: "#F6F1EE",
+            backgroundColor: "#593ea3",
+            color: "white",
             marginBottom: "20px",
           }}
         >
           <DevicesIcon />
         </Fab>
-        <Typography variant="h6" style={{ color: '#F6F1EE', marginBottom: "10px", fontFamily:"'Courier New', Courier, monospace"}}>
+        <Typography variant="h6" style={{ color: 'white', marginBottom: "10px", fontFamily:'Helvetica, Arial'}}>
         Attention to Detail
         </Typography>
-        <Typography variant="body1" style={{ color: '#F6F1EE',fontFamily:"'Courier New', Courier, monospace" }}>
+        <Typography variant="body1" style={{ color: 'white',fontFamily:'Helvetica, Arial' }}>
        Diligent attention to detail ensures high-quality results.
         </Typography>
 

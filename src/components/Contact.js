@@ -52,31 +52,32 @@ const Contact = () => {
   };
   
   const cardStyle = {
-    backgroundColor: '#4F4A45',
-    border: '2px solid #ED7D31',
+    backgroundColor: '#6c58a3',
+    border: 'transparent',
     maxWidth: '80%',
     width: '75%',
   };
 
   const textStyle = {
-    fontFamily: "'Courier New', Courier, monospace",
-    color: '#F6F1EE',
+    fontFamily: 'Helvetica, Arial',
+    color: 'white',
   };
 
   return (
     <div id='contact' height='100vh'>
-      <Box display="flex" justifyContent="center" alignItems="center"  maxHeight={'100vh'} minHeight="100vh" marginTop='100px'  marginBottom='20px'>
+      <Box display="flex" flexDirection={'column'} justifyContent="center" alignItems="center"  maxHeight={'100vh'} minHeight="100vh" marginTop='100px'  marginBottom='20px'>
         <Card
           variant="outlined"
           sx={cardStyle}
           data-aos="fade-down" data-aos-delay='100' 
         >
-
           <CardContent>
-            <Typography color={'#F6F1EE'} variant="h4" marginBottom={'10px'} fontFamily= "'Courier New', Courier, monospace">
-              Contact Me
+        <Typography sx={{fontSize: { xs: '25px', md: '30px' }}} data-aos="fade-down" data-aos-delay='100'  color={'white'}  marginBottom={'5px'} fontFamily= 'Helvetica, Arial'>
+              Send me a Message
             </Typography>
-            <SocialNav/>
+                  <Typography sx={{fontSize: { xs: '15px', md: '20px' }}} data-aos="fade-down" data-aos-delay='100'  color={'white'}  marginBottom={'15px'} fontFamily= 'Helvetica, Arial'>
+              Let's get this conversation started
+            </Typography>
             <Formik
               initialValues={{
                 firstName: '',
@@ -102,7 +103,7 @@ const Contact = () => {
                         margin="dense"
                         fullWidth
                         error={touched.firstName && errors.firstName}
-                        sx={{ ...textStyle, color: '#F6F1EE' }}
+                        sx={{ ...textStyle, color: 'white' }}
                         InputProps={{ sx: textStyle }}
                         InputLabelProps={{ sx: textStyle }}
                       />
@@ -110,7 +111,7 @@ const Contact = () => {
                         {msg => (
                           <div className="error"
                             style={{
-                              color: '#F6F1EE',
+                              color: 'white',
                               position: 'relative',
                               margin: '2px 0',
                               left: '5px',
@@ -132,7 +133,7 @@ const Contact = () => {
                         margin="dense"
                         fullWidth
                         error={touched.lastName && errors.lastName}
-                        sx={{ ...textStyle, color: '#F6F1EE' }}
+                        sx={{ ...textStyle, color: 'white' }}
                         InputProps={{ sx: textStyle }}
                         InputLabelProps={{ sx: textStyle }}
                       />
@@ -140,7 +141,7 @@ const Contact = () => {
                         {msg => (
                           <div className="error"
                             style={{
-                              color: '#F6F1EE',
+                              color: 'white',
                               position: 'relative',
                               margin: '2px 0',
                               left: '5px',
@@ -161,7 +162,7 @@ const Contact = () => {
                         margin="dense"
                         fullWidth
                         error={touched.email && errors.email}
-                        sx={{ ...textStyle, color: '#F6F1EE' }}
+                        sx={{ ...textStyle, color: 'white' }}
                         InputProps={{ sx: textStyle }}
                         InputLabelProps={{ sx: textStyle }}
                       />
@@ -169,7 +170,7 @@ const Contact = () => {
                         {msg => (
                           <div className="error"
                             style={{
-                              color: '#F6F1EE',
+                              color: 'white',
                               position: 'relative',
                               margin: '2px 0',
                               left: '5px',
@@ -190,7 +191,7 @@ const Contact = () => {
                         variant="filled"
                         margin="dense"
                         fullWidth
-                        sx={{ ...textStyle, color: '#F6F1EE' }}
+                        sx={{ ...textStyle, color: 'white' }}
                         InputProps={{ sx: textStyle }}
                         InputLabelProps={{ sx: textStyle }}
                       />
@@ -198,7 +199,7 @@ const Contact = () => {
                         {msg => (
                           <div className="error"
                             style={{
-                              color: '#F6F1EE',
+                              color: 'white',
                               position: 'relative',
                               margin: '2px 0',
                               left: '5px',
@@ -213,15 +214,15 @@ const Contact = () => {
                   <Button
                     type="submit"
                     sx={{
-                      border:'2px solid #F6F1EE',
-                      color: '#F6F1EE',
+                      border:'2px solid white',
+                      color: 'white',
                       '&:hover': {
-                        background: '#F6F1EE',
-                        color: '#4F4A45',
+                        background: 'white',
+                        color: '#6c58a3',
                       },
                       marginTop: '16px',
                       marginBottom:'4px',
-                      fontFamily: "'Courier New', Courier, monospace",
+                      fontFamily: 'Helvetica, Arial',
                     }}
                     variant="outlined"
                     disabled={!isValid}
@@ -236,9 +237,9 @@ const Contact = () => {
                   >         
                     <Alert severity="success" 
     sx={{
-      backgroundColor: '#4F4A45',  
-      color: '#F6F1EE', 
-      fontFamily: "'Courier New', Courier, monospace",          
+      backgroundColor: '#6c58a3',  
+      color: 'white', 
+      fontFamily: 'Helvetica, Arial',          
       '& .MuiAlert-icon': {
         color: 'green',        
       },
@@ -257,9 +258,9 @@ const Contact = () => {
                       <Alert
     severity="error"
     sx={{
-      backgroundColor: '#4F4A45',  
-      color: '#F6F1EE',
-      fontFamily: "'Courier New', Courier, monospace",           
+      backgroundColor: '#6c58a3',  
+      color: 'white',
+      fontFamily: 'Helvetica, Arial',           
       '& .MuiAlert-icon': {
         color: 'red',  
       },

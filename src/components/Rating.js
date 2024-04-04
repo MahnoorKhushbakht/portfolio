@@ -15,14 +15,14 @@ export default function Rating() {
         <ChakraProvider>
             <div id='skills' style={{ height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                 <Text
-                    style={{ textAlign: 'left', color: '#F6F1EE', margin: '40px 0' }}
+                    style={{ textAlign: 'left', color: 'white', margin: '40px 0' }}
                     className="animate__animated animate__fadeInUp"
-                    color='#F6F1EE'
+                    color='white'
                     fontSize={{ base: "25px", md: "40px", lg: "45px" }}
                 >
                     <Highlight
                         query={['Skills']}
-                        styles={{ color: '#F6F1EE', px: '4', py: '3', rounded: 'full', bg: '#ED7D31' }}
+                        styles={{ color: 'white', px: '4', py: '3', rounded: 'full', bg: '#593ea3' }}
                         className="animate__animated animate__bounce"
                     >
                         My Skills
@@ -31,11 +31,11 @@ export default function Rating() {
 
                 <Flex wrap="wrap" justify="center" align="center">
                     {skills.map((skill, index) => (
-                        <Box key={index} p={5} display="flex" flexDirection="column" alignItems="center" width={{ base: '50%', md: '33%', lg: '30%' }}>
-                            <CircularProgress determinate value={skill.value} color='#ED7D31' size="50px">
-                                <CircularProgressLabel color="#F6F1EE">{skill.value}%</CircularProgressLabel>
+                        <Box key={index} p={5} display="flex" flexDirection="column" alignItems="center" width={{ small: '20%', md: '83%', lg: '80%' }}>
+                            <CircularProgress determinate value={skill.value} color='#593ea3' size="50px">
+                                <CircularProgressLabel color="white">{skill.value}%</CircularProgressLabel>
                             </CircularProgress>
-                            <Text mt="4" fontSize="md" color="#F6F1EE">{skill.name}</Text>
+                            <Text mt="4" fontSize="md" color="white">{skill.name}</Text>
                         </Box>
                     ))}
                 </Flex>

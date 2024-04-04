@@ -11,8 +11,8 @@ function Card2() {
 
 
   const textStyle = {
-    fontFamily: "'Courier New', Courier, monospace",
-    color: '#F6F1EE',
+    fontFamily: 'Helvetica, Arial',
+    color: 'white',
   };
 
   return (
@@ -30,8 +30,8 @@ function Card2() {
       <CardContent>
       <Fab
           style={{
-            backgroundColor: "#ED7D31",
-            color: "#F6F1EE",
+            backgroundColor: "#593ea3",
+            color: "white",
             marginBottom: "20px",
           }}
         >

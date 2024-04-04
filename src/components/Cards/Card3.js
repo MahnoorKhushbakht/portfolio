@@ -24,14 +24,14 @@ function Card3() {
 
       >
       <CardContent>
-                  <Fab style={{ backgroundColor: '#ED7D31', color:'#F6F1EE', marginBottom: '20px' }}>
+                  <Fab style={{ backgroundColor: '#593ea3', color:'white', marginBottom: '20px' }}>
                   <DrawIcon />
                   </Fab>
-                  <Typography variant='h6' style={{ color: '#F6F1EE' , marginBottom: '10px' ,fontFamily:"'Courier New', Courier, monospace"}}>
+                  <Typography variant='h6' style={{ color: 'white' , marginBottom: '10px' ,fontFamily:'Helvetica, Arial'}}>
                   Adaptability
                   </Typography>
 
-<Typography variant='body1' style={{  color: '#F6F1EE',fontFamily:"'Courier New', Courier, monospace"  }}>
+<Typography variant='body1' style={{  color: 'white',fontFamily:'Helvetica, Arial'  }}>
 I adapt to changing project needs easily, ensuring success in dynamic environments.
       </Typography>
 

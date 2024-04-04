@@ -27,7 +27,7 @@ export default function SocialIcon() {
       <IconButton
         variant='outlined'
         aria-label='Facebook'
-        color='#F6F1EE'
+        color='white'
         fontSize='20px'
         margin='0 6px'
         size='md'
@@ -37,7 +37,7 @@ export default function SocialIcon() {
 
       <IconButton
         variant='outlined'
-        color='#F6F1EE'
+        color='white'
         aria-label='Instagram'
         fontSize='20px'
         margin='0 6px'
@@ -48,7 +48,7 @@ export default function SocialIcon() {
 
       <IconButton
         variant='outlined'
-        color='#F6F1EE'
+        color='white'
         aria-label='LinkedIn'
         fontSize='20px'
         margin='0 6px'
@@ -59,7 +59,7 @@ export default function SocialIcon() {
 
       <IconButton
         variant='outlined'
-        color='#F6F1EE'
+        color='white'
         aria-label='Github'
         fontSize='20px'
         margin='0 6px'
@@ -70,7 +70,7 @@ export default function SocialIcon() {
 
       <IconButton
         variant='outlined'
-        color='#F6F1EE'
+        color='white'
         aria-label='Mail'
         margin='0 6px'
         fontSize='20px'

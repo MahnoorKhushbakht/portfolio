@@ -5,8 +5,7 @@ import {
     Text,
 } from '@chakra-ui/react';
 import Typewriter from 'typewriter-effect';
-import SocialIcon from '../SocialIcon';
-import ResumeBtn from '../ResumeBtn';
+import Btn from '../Btn';
 export default function HeadingText_SM(){
     return(
     <>
@@ -22,24 +21,24 @@ export default function HeadingText_SM(){
       <Box maxW="20rem">
         <Heading
           lineHeight="tall"
-          fontFamily="'Courier New', Courier, monospace"
+          fontFamily='Helvetica, Arial'
           className="animate__animated animate__fadeInUp"
-          color='#F6F1EE' 
+          color='white' 
         >
       <Text
         style={{ fontSize: '35px'}}
         className="animate__animated animate__fadeInUp"
-        color='#F6F1EE' 
-        fontFamily="'Courier New', Courier, monospace"
+        color='white' 
+        fontFamily='Helvetica, Arial'
     >
        Hi there,
     </Text>
           <Highlight
             style={{ fontSize: '35px' }}
             query={['Khushbakht']}
-            styles={{  color:'#F6F1EE' , px: '3', py: '2', rounded: 'full', bg: '#ED7D31'}}
+            styles={{  color:'white' , px: '3', py: '2', rounded: 'full', bg: '#6c58a3'}}
             className="animate__animated animate__bounce"
-            fontFamily="'Courier New', Courier, monospace"
+            fontFamily='Helvetica, Arial'
           >
           I'm Mahnoor Khushbakht
           </Highlight>
@@ -48,8 +47,8 @@ export default function HeadingText_SM(){
           style={{ fontSize: '25px' }}
           fontSize="lg"
           className="animate__animated animate__fadeInUp"
-          color='#F6F1EE' 
-          fontFamily="'Courier New', Courier, monospace"
+          color='white' 
+          fontFamily='Helvetica, Arial'
         >
 <Typewriter marginTop='5px'
  onInit={(typewriter) => {
@@ -68,10 +67,7 @@ export default function HeadingText_SM(){
     justifyContent='center'
     flexDirection='column'
     alignItems='center'>
-<ResumeBtn/>
-<div>
-<SocialIcon/>
-</div>
+<Btn/>
 </Box>
 
       </Box>
