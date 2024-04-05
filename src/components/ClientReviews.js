@@ -1,19 +1,25 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
 import Review1 from './Reviews/Review1';
 import Review2 from './Reviews/Review2';
+import Review3 from './Reviews/Review3';
+import HeadinStyleMD from './HeadingStyleMD';
+import HeadinStyleSM from './HeadingStyleSM';
+import LayoutStyle from './LayoutStyle';
 
 function ClientReviews() {
   return (
-    <div id='review' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '20px' ,minHeight:"100vh" ,height:'100vh' }}>
-      <Typography  data-aos="fade-down" data-aos-delay='100' sx={{marginBottom:'10px', fontSize: { xs: '25px', md: '30px' }}} color={'white'} variant="h5" fontWeight='bold' fontFamily='Helvetica, Arial'>
+   <LayoutStyle>
+      <Divider textAlign="right">
+     <HeadinStyleMD>
        Recent Reviews
-      </Typography>
-      <Typography data-aos="fade-down" data-aos-delay='100' width='80%' sx={{ fontSize: { xs: '15px', md: '20px' },width: { xs: '80%', md: '50%' }, marginBottom:'15x'}} color={'rgba(255, 255, 255, 0.856)'} variant="h4" fontStyle='italic' fontFamily='Helvetica, Arial'>
-      What does client says about my wprk.
-      </Typography>  
-        <Carousel controls={false} indicators={false} style={{ width: '100%' }}>
+       </HeadinStyleMD>
+       <HeadinStyleSM>
+      What does client says about my work.
+      </HeadinStyleSM>
+      </Divider>
+        <Carousel controls={false} indicators={true} style={{ width: '100%' }}>
           <Carousel.Item>
 <Review1/>
 
@@ -21,8 +27,11 @@ function ClientReviews() {
           <Carousel.Item>
 <Review2/>
           </Carousel.Item>
+          <Carousel.Item>
+<Review3/>
+          </Carousel.Item>
         </Carousel>
-      </div>
+        </LayoutStyle>
   );
 }
 

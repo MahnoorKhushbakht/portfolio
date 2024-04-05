@@ -3,7 +3,12 @@ import gd from './images/gd.jpeg';
 import amz from './images/amz.jpeg';
 import wb from './images/luckyShrub.JPG';
 import 'aos/dist/aos.css';
+import Divider from '@mui/material/Divider';
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import HeadinStyleMD from './HeadingStyleMD';
+import HeadinStyleSM from './HeadingStyleSM';
+import { Container } from '@mui/material';
+import LayoutStyle from './LayoutStyle';
 export default function Background() {
     const data = [
         { src: gd, alt: 'Graphic Design', heading: 'Graphic Design', url: 'https://github.com/MahnoorKhushbakht/GraphicDesign/tree/master', text: 'Researched, Assisted and designed innovative ideas for brand development.' },
@@ -12,19 +17,21 @@ export default function Background() {
     ];
 
     return (
-        <div id='background' height='100vh'>
-            <ChakraProvider>
-                <Box display="flex" justifyContent="center" flexDirection='column' alignItems="center" minHeight="100vh" marginTop='130px' marginBottom='20px' spacing="4">
-      <Text data-aos="fade-down" data-aos-delay="100" fontSize={{ base: '25px', md: '30px' }} color="white" fontWeight="bold" marginBottom="10px" fontFamily='Helvetica, Arial'>
+<LayoutStyle>
+        {/* <Box display="flex" justifyContent="center" flexDirection='column' alignItems="center" minHeight="100vh" marginTop='130px' marginBottom='20px' spacing="4"> */} 
+        <Divider textAlign="left">
+      <HeadinStyleMD>
         Professional Experience
-      </Text>
-      <Text data-aos="fade-down" data-aos-delay="100" width={{ base: '80%', md: '50%' }} fontSize={{ base: '15px', md: '20px' }} color="rgba(255, 255, 255, 0.856)" variant="h4" fontStyle="italic" marginBottom="15px" fontFamily='Helvetica, Arial'>
+        </HeadinStyleMD>
+     <HeadinStyleSM>
         Proven track record in diverse professional roles.
-      </Text>
-      <Box display="flex" justifyContent="center" flexDirection={{ base: 'column', sm: 'column', md: 'row' }}>
+        </HeadinStyleSM>
+        </Divider>
+        <ChakraProvider>
+      <Box display="flex" justifyContent="center" marginBottom={{ base: '100px', sm: '100px', md: '0' }}flexDirection={{ base: 'column', sm: 'column', md: 'row' }}>
                     {data.map((item, index) => (
                         <Box key={index} mx={{ base: 'auto', md: '4' }} mb={{ base: '4', md: '0' }} ml={{ base: '8', md: '4' }} mr={{ base: '8', md: '4' }}>
-                            <Card maxH="sm" maxW='sm' backgroundColor="#6c58a3" data-aos="fade-up" data-aos-delay='50'>
+                            <Card maxH="sm" maxW='sm' backgroundColor="#6c58a3" data-aos="fade-up" data-aos-delay='50' >
                                 <CardBody>
                                 <Heading size="md" sx={{ color: 'white', fontFamily: 'Helvetica, Arial' }}>
       {item.heading}{' '}
@@ -53,8 +60,7 @@ export default function Background() {
                         </Box>
                     ))}
                     </Box>
-                </Box>
-            </ChakraProvider>
-        </div>
+                    </ChakraProvider>
+                    </LayoutStyle>
     );
 }

@@ -9,7 +9,7 @@ import './css/Header.css';
 
 function Header() {
   const transparentNavbarStyles = {
-    position: 'fixed',
+    position: 'static',
     width: '100%',
     zIndex: 999,
   };

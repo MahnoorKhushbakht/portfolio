@@ -3,16 +3,12 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import BackgroundExp from './BackgroundExp';
 import ProfileImage from './images/ProfileImage.png';
-import Typography from '@mui/material/Typography';
 import SocialIcon from './SocialIcon';
 import Footer from './Footer';
+import HeadinStyleMD from './HeadingStyleMD';
+import Divider from '@mui/material/Divider';
+import LayoutStyle from './LayoutStyle';
 
-const CenteredContainer = styled('div')({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  height: '100vh',
-});
 
 const Container = styled('div')({
   position: 'relative',
@@ -35,8 +31,8 @@ const Image = styled('img')(({ theme }) => ({
 
 export default function AboutMe() {
   return (
-    <div id='about'>
-      <CenteredContainer>
+    <>
+<LayoutStyle>
         <Container>
           <Box
             sx={{
@@ -49,17 +45,19 @@ export default function AboutMe() {
             }}
           >
                   <Image src={ProfileImage} alt="Profile Image" />
-        <Typography  data-aos="fade-down" data-aos-delay='100' sx={{ fontSize: { xs: '20px', md: '25px' }}} color={'white'} variant="h5" fontWeight='bold' marginBottom={'10px'} fontFamily='Helvetica, Arial'>
+                  <Divider textAlign="center">
+       <HeadinStyleMD>
         About Me
-      </Typography>
+   </HeadinStyleMD>
+   </Divider>
             <BackgroundExp />
             <SocialIcon/>
           </Box>
         </Container>
-      </CenteredContainer>
+        </LayoutStyle>
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)', color:'#d6d6d6'}}>
          <Footer/>
       </div>
-    </div>
+    </>
   );
 }

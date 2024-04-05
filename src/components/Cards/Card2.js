@@ -22,8 +22,8 @@ function Card2() {
         flexGrow: 1,
         display: { xs: '400', md: '800' },
         backgroundColor: 'transparent',
-        borderRadius: '16px',
         width: '90%',
+        border:'none'
       }}
       data-aos="fade-down" data-aos-delay='100' 
     >

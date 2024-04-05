@@ -7,7 +7,8 @@ import Header from './components/Header';
 import Background from './components/Background';
 import Projects from './components/Projects';
 import ClientReviews from './components/ClientReviews';
-
+import ScrollButton from './components/ScrollButton'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -15,10 +16,12 @@ function App() {
         <Header/>
         <Home/>
         <Background/>
+        <Skills/>
         <Projects/>
 <ClientReviews/>
         <Contact/>
         <AboutMe/>
+        <ScrollButton/>
       </div>
 
   );

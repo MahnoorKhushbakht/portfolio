@@ -18,6 +18,7 @@ function Card1() {
           display: { xs: '400', md: '800' },
           backgroundColor: 'transparent',
           width: '90%',
+          border:'none'
         }}
         data-aos="fade-down" data-aos-delay='100' 
       >

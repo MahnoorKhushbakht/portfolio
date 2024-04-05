@@ -48,7 +48,7 @@ export default function ProjectSM() {
                                       },
                                       fontFamily: 'Helvetica, Arial',
                                     }}
-                                    size='large'
+                                    size='small'
                                     variant="contained"
                   onClick={handlePortfolioClick}>View</Button>
                   <Button                                 sx={{
@@ -61,7 +61,7 @@ export default function ProjectSM() {
                                    },
                                    fontFamily: 'Helvetica, Arial',
                                  }}
-                                 size='large'
+                                 size='small'
                                  variant="contained"  onClick={handleGitPortfolioClick}>Learn More</Button>
                 </CardActions>
               </div>
