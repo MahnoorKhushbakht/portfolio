@@ -4,15 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import * as React from 'react';
 import ProfileImage from './images/ProfileImage.png';
-// import mk from './images/mk.png';
 import './css/Header.css';
 
 function Header() {
-  const transparentNavbarStyles = {
-    position: 'static',
-    width: '100%',
-    zIndex: 999,
-  };
 
   const linkStyles = {
     color: 'white',
@@ -22,8 +16,7 @@ function Header() {
 
   return (
     <Navbar
-      expand="md"
-      style={transparentNavbarStyles}
+      expand="lg"
       data-bs-theme="dark"
       variant="dark"
       className="header"
@@ -41,14 +34,14 @@ function Header() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto" >
           <Nav.Link href="#home" style={linkStyles}>
               Home
             </Nav.Link>
             <Nav.Link href="#background" style={linkStyles}>
               Experience
             </Nav.Link>
-            <Nav.Link href="#projects" style={linkStyles}>
+            <Nav.Link href="#project" style={linkStyles}>
               Projects
             </Nav.Link>
             <Nav.Link href="#contact" style={linkStyles}>

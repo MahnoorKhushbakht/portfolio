@@ -1,8 +1,9 @@
 import { Container } from '@mui/material';
 
-export default function LayoutStyle({children}) {
+export default function LayoutStyle({children,id}) {
   return (
     <div
+    id= {id}
       style={{
         display: 'flex',
         flexDirection: 'column',

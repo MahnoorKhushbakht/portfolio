@@ -3,22 +3,22 @@ import Box from '@mui/material/Box';
 import 'aos/dist/aos.css';
 import ProjectSM from './Project/ProjectsSM';
 import ProjectMD from './Project/ProjectsMD';
-import Divider from '@mui/material/Divider';
-import HeadinStyleMD from './HeadingStyleMD';
-import HeadinStyleSM from './HeadingStyleSM';
-import LayoutStyle from './LayoutStyle';
+import HeadinStyleMD from './Styles/HeadingStyleMD';
+import HeadinStyleSM from './Styles/HeadingStyleSM';
+import LayoutStyle from './Styles/LayoutStyle';
+import DividerStyle from './Styles/DividerStyle';
 
 export default function Projects() {
   return (
-<LayoutStyle>
-      <Divider textAlign="left">
+<LayoutStyle id='project'>
+      <DividerStyle textAlign='left'>
 <HeadinStyleMD>
           My Web Projects
           </HeadinStyleMD>
 <HeadinStyleSM>
           Projects done successfully for my Clients.
           </HeadinStyleSM>
-        </Divider>
+          </DividerStyle>
         <Box
         sx={{
           display: { xs: 'flex', md: 'none' },

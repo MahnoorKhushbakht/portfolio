@@ -5,9 +5,8 @@ import BackgroundExp from './BackgroundExp';
 import ProfileImage from './images/ProfileImage.png';
 import SocialIcon from './SocialIcon';
 import Footer from './Footer';
-import HeadinStyleMD from './HeadingStyleMD';
-import Divider from '@mui/material/Divider';
-import LayoutStyle from './LayoutStyle';
+import HeadinStyleMD from './Styles/HeadingStyleMD';
+import LayoutStyle from './Styles/LayoutStyle';
 
 
 const Container = styled('div')({
@@ -32,7 +31,7 @@ const Image = styled('img')(({ theme }) => ({
 export default function AboutMe() {
   return (
     <>
-<LayoutStyle>
+<LayoutStyle id='about'>
         <Container>
           <Box
             sx={{
@@ -45,11 +44,9 @@ export default function AboutMe() {
             }}
           >
                   <Image src={ProfileImage} alt="Profile Image" />
-                  <Divider textAlign="center">
        <HeadinStyleMD>
         About Me
    </HeadinStyleMD>
-   </Divider>
             <BackgroundExp />
             <SocialIcon/>
           </Box>
