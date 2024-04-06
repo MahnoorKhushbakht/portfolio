@@ -11,7 +11,7 @@ import { Divider } from '@chakra-ui/react'
 export default function Projects() {
   return (
 <LayoutStyle id='project'>
-<DividerStyle textAlign='left'>
+<DividerStyle>
 <HeadinStyleMD>
           My Web Projects
           </HeadinStyleMD>

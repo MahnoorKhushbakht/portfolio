@@ -6,10 +6,10 @@ export default function DividerStyle({children,textAlign}) {
     sx={{
         '&::before, &::after':{
             display: 'block',
-            borderTop: '2px solid white' 
+            borderTop: '2px solid #6c58a3' 
         }
     }}
-    textAlign='center'
+   textAlign="center"
 >
 {children}
         </Divider>

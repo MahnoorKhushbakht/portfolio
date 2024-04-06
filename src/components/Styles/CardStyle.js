@@ -12,9 +12,9 @@ function CardStyle({children}) {
         variant="outlined"
         sx={{
           flexGrow: 1,
-          display: { xs: '400', md: '800' },
+          display: { xs: '600', md: '800' },
           backgroundColor: 'transparent',
-          width: '60%',
+          width: '80%',
           border:'none'
         }}
         data-aos="fade-down" data-aos-delay='100' 

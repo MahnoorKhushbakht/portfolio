@@ -18,8 +18,7 @@ export default function Background() {
 
     return (
 <LayoutStyle id='background'>
-        {/* <Box display="flex" justifyContent="center" flexDirection='column' alignItems="center" minHeight="100vh" marginTop='130px' marginBottom='20px' spacing="4"> */} 
-<DividerStyle textAlign='left'>
+    <DividerStyle>
       <HeadinStyleMD>
         Professional Experience
         </HeadinStyleMD>

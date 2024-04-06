@@ -58,7 +58,7 @@ export default function Btn() {
           )}
           {loading && (
             <Box ml='2'>
-              <CircularProgress size='30px' color='orange.300' value={progress} thickness={6} />
+              <CircularProgress size='30px' color='#6c58a3' value={progress} thickness={6} />
             </Box>
           )}
         </Button>

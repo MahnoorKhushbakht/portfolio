@@ -13,6 +13,7 @@ export default function HeadinStyleMD({children}) {
           fontWeight='bold'
           marginBottom={'10px'}
           fontFamily='Helvetica, Arial'
+          textAlign='center'
         >
           {children}
         </Typography>

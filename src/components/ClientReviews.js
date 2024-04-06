@@ -11,7 +11,7 @@ import DividerStyle from './Styles/DividerStyle';
 function ClientReviews() {
   return (
    <LayoutStyle id='review'>
-      <DividerStyle textAlign='right'>
+      <DividerStyle>
        <HeadinStyleMD>
        Recent Reviews
        </HeadinStyleMD>

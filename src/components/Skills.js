@@ -9,7 +9,7 @@ import Cardcontent from './CardContent';
 export default function Skills() {
   return (
 <LayoutStyle id="skills">
-      <DividerStyle textAlign="right">
+      <DividerStyle>
       <HeadinStyleMD>
         Skills
       </HeadinStyleMD>
