@@ -17,7 +17,7 @@ export default function Cardcontent() {
             marginBottom: "20px",
           }}
         >
-          <DevicesIcon />
+          <DevicesIcon  />
         </Fab>
         <Typography variant="h6" style={{ color: 'white', marginBottom: "10px", fontFamily:'Helvetica, Arial'}}>
         Attention to Detail
