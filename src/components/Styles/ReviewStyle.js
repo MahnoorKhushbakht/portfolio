@@ -19,15 +19,18 @@ export default function ReviewStyle( {children}){
       },
     }}
   >
-<Button style={{color:'white', fontFamily:'Helvetica, Arial', '&:hover': { textDecoration: 'none' } , flex:'1'}} variant='ghost' leftIcon={<BiLike style={{color:'white'}}   />}>
+<Button _hover={{ textDecoration: 'none' }} style={{ color: 'white', fontFamily: 'Helvetica, Arial', flex: '1' }} variant='ghost' leftIcon={<BiLike style={{ color: 'white' }} />}>
   Like
 </Button>
-<Button style={{color:'white', fontFamily:'Helvetica, Arial', '&:hover': { textDecoration: 'none' } , flex:'1'}} variant='ghost' leftIcon={<BiChat style={{color:'white'}}/>}>
+<Button _hover={{ textDecoration: 'none' }} style={{ color: 'white', fontFamily: 'Helvetica, Arial', flex: '1' }} variant='ghost' leftIcon={<BiChat style={{ color: 'white' }} />}>
   Comment
 </Button>
-<Button style={{color:'white', fontFamily:'Helvetica, Arial', '&:hover': { textDecoration: 'none' } , flex:'1'}} variant='ghost' leftIcon={<BiShare style={{color:'white'}}/>}>
+<Button _hover={{ textDecoration: 'none' }} style={{ color: 'white', fontFamily: 'Helvetica, Arial', flex: '1' }} variant='ghost' leftIcon={<BiShare style={{ color: 'white' }} />}>
   Share
 </Button>
+
+
+
 
   </CardFooter>
 </Card>

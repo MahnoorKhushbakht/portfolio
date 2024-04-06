@@ -28,7 +28,7 @@ export default function ProjectSM() {
 
   return (
     <>
-            <Card  data-aos="fade-down" data-aos-delay='100' sx={{ maxWidth: '80%', backgroundColor: '#ccccd8', margin: 'auto', position: 'relative' }}>
+            <Card  data-aos="fade-down" data-aos-delay='100' sx={{ maxWidth: '100%',maxHeight: '100%', backgroundColor: '#ccccd8', margin: 'auto', position: 'relative' }}>
               <CardMedia
                 component="img"
                 alt="project1"
@@ -62,12 +62,12 @@ export default function ProjectSM() {
                                    fontFamily: 'Helvetica, Arial',
                                  }}
                                  size='small'
-                                 variant="contained"  onClick={handleGitPortfolioClick}>Learn More</Button>
+                                 variant="contained"  onClick={handleGitPortfolioClick}>Github</Button>
                 </CardActions>
               </div>
             </Card>
 
-            <Card data-aos="fade-down" data-aos-delay='150' sx={{maxWidth: '80%', backgroundColor: '#ebc521', margin: '20px auto', position: 'relative' }}>
+            <Card data-aos="fade-down" data-aos-delay='150' sx={{maxWidth: '100%',maxHeight: '100%', backgroundColor: '#ebc521', margin: '20px auto', position: 'relative' }}>
               <CardMedia
                 component="img"
                 alt="project2"
@@ -86,7 +86,7 @@ export default function ProjectSM() {
                                       },
                                       fontFamily: 'Helvetica, Arial',
                                     }}
-                                    size='large'
+                                    size='small'
                                     variant="contained"  onClick={handleMarketingClick}>View</Button>
                   <Button                                 sx={{
                                   
@@ -98,8 +98,8 @@ export default function ProjectSM() {
                                       },
                                       fontFamily: 'Helvetica, Arial',
                                     }}
-                                    size='large'
-                                    variant="contained"  onClick={handleGitMarketingClick}>Learn More</Button>
+                                    size='small'
+                                    variant="contained"  onClick={handleGitMarketingClick}>Github</Button>
                 </CardActions>
               </div>
             </Card>

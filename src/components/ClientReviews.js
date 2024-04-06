@@ -19,7 +19,7 @@ function ClientReviews() {
       What does client says about my work.
       </HeadinStyleSM>
       </DividerStyle>
-        <Carousel controls={false} indicators={true} style={{ width: '100%' }}>
+        <Carousel controls={false} indicators={false} style={{ width: '100%' }}>
           <Carousel.Item>
 <Review1/>
 
