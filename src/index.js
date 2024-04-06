@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 AOS.init({
   duration: 800, 
   easing: 'ease',
-  once: true, 
+  once: false, 
   mirror: false, 
   anchorPlacement: 'top-bottom', 
 });

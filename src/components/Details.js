@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 
 export default function BackgroundExp() {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '80%', height: '80%', marginLeft: '10px' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '80%', height: '80%', marginLeft: '10px' ,marginTop:'5px',marginBottom:'5px'}}>
       <ChakraProvider>
         <Box textAlign={{ base: 'center', md: 'center' }}>
           <Text fontSize='md' color={'white'} fontFamily='Helvetica, Arial'>

@@ -39,11 +39,11 @@ export default function AboutMe() {
               justifyContent: 'center',
               flexDirection:'column',
               alignItems: 'center',
-              width: { xs: '80%', md: '50%' },
+              width: { xs: '95%', md: '50%' },
               height: '60%',
             }}
           >
-                  <Image src={ProfileImage} alt="Profile Image" />
+                  <Image src={ProfileImage} alt="Profile Image" marginBottom='5px'/>
        <HeadinStyleMD>
         About Me
    </HeadinStyleMD>
