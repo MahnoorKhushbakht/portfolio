@@ -11,8 +11,8 @@ function CardStyle({ children }) {
         flexGrow: 1,
         display: { xs: '90%', md: '800' },
         backgroundColor: '#6c58a3',
-        width: '90%', 
-        border: 'none'
+        border:'none',
+        width: '100%'
       }}
       data-aos="fade-down" 
       data-aos-delay='100'
