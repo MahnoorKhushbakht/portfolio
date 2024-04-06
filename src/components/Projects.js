@@ -7,18 +7,18 @@ import HeadinStyleMD from './Styles/HeadingStyleMD';
 import HeadinStyleSM from './Styles/HeadingStyleSM';
 import LayoutStyle from './Styles/LayoutStyle';
 import DividerStyle from './Styles/DividerStyle';
-
+import { Divider } from '@chakra-ui/react'
 export default function Projects() {
   return (
 <LayoutStyle id='project'>
-      <DividerStyle textAlign='left'>
+<DividerStyle textAlign='left'>
 <HeadinStyleMD>
           My Web Projects
           </HeadinStyleMD>
 <HeadinStyleSM>
           Projects done successfully for my Clients.
           </HeadinStyleSM>
-          </DividerStyle>
+ </DividerStyle>
         <Box
         sx={{
           display: { xs: 'flex', md: 'none' },

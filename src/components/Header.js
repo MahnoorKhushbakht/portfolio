@@ -20,6 +20,7 @@ function Header() {
       data-bs-theme="dark"
       variant="dark"
       className="header"
+      position='fixed'
     >
       <Container>
       <Navbar.Brand href="#home">
@@ -47,7 +48,7 @@ function Header() {
             <Nav.Link href="#contact" style={linkStyles}>
               Contact
             </Nav.Link>
-            <NavDropdown style={linkStyles} title="More" id="basic-nav-dropdown">
+            <NavDropdown style={linkStyles} title="More" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#skills">Skills</NavDropdown.Item>
               <NavDropdown.Item href="#review">Review</NavDropdown.Item>
               <NavDropdown.Item href="#about">About</NavDropdown.Item>

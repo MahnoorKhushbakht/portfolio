@@ -1,9 +1,7 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Divider from '@mui/material/Divider';
-import { Button, ChakraProvider} from '@chakra-ui/react';
+import { ChakraProvider} from '@chakra-ui/react';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 export default function Footer() {
   const linkStyles = {
@@ -21,7 +19,7 @@ export default function Footer() {
       <Container fixed           display='flex'
           justifyContent='center' alignItems='center'>
       <ChakraProvider>
-        <Button
+        {/* <Button
         size={{ base: 'md', md: 'lg' }}
           marginLeft='8px'
           fontFamily="Helvetica, Arial"
@@ -34,10 +32,11 @@ export default function Footer() {
             },
           }}
         >
+          Let's chat! Drop me a message for collaborations or queries.
   <a href="#contact" style={{ textDecoration: 'none', color: 'inherit' }}>
     Contact Me
     </a>
-        </Button>
+        </Button> */}
         </ChakraProvider>
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: '10px 0' }}>
           <a href="#home" style={linkStyles}>Home</a>

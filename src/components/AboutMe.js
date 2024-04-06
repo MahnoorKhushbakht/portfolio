@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import BackgroundExp from './BackgroundExp';
+import Details from './Details';
 import ProfileImage from './images/ProfileImage.png';
 import SocialIcon from './SocialIcon';
 import Footer from './Footer';
@@ -22,8 +22,8 @@ const Container = styled('div')({
 
 const Image = styled('img')(({ theme }) => ({
   borderRadius: '50%',
-  width: theme.breakpoints.values.xs === '100px' ? '100px' : '200px',
-  height: theme.breakpoints.values.xs === '100px' ? '100px' : '200px',
+  width: theme.breakpoints.values.xs === '75px' ? '75px' : '150px',
+  height: theme.breakpoints.values.xs === '75px' ? '75px' : '150px',
   margin: '5px 5px',
 }));
 
@@ -39,7 +39,7 @@ export default function AboutMe() {
               justifyContent: 'center',
               flexDirection:'column',
               alignItems: 'center',
-              width: { xs: '70%', md: '50%' },
+              width: { xs: '80%', md: '50%' },
               height: '60%',
             }}
           >
@@ -47,7 +47,7 @@ export default function AboutMe() {
        <HeadinStyleMD>
         About Me
    </HeadinStyleMD>
-            <BackgroundExp />
+            <Details />
             <SocialIcon/>
           </Box>
         </Container>

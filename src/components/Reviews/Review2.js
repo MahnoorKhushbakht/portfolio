@@ -3,8 +3,7 @@
 import { CardHeader, CardBody, IconButton,Avatar, Box, Heading, Text, Flex, Button } from '@chakra-ui/react';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import 'aos/dist/aos.css';
-import Reviews from '../ReviewsTemp';
-import PE from '../images/ClientImage.jpeg'
+import Reviews from '../Styles/ReviewStyle';
 export default function Reviews3() {
   const [showMore, setShowMore] = useState(false);
 

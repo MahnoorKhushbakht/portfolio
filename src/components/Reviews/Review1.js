@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CardHeader, CardBody, IconButton,Avatar, Box, Heading, Text, Flex, Button } from '@chakra-ui/react';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import 'aos/dist/aos.css';
-import Reviews from '../ReviewsTemp';
+import Reviews from '../Styles/ReviewStyle';
 import PE from '../images/ClientImage.jpeg'
 export default function Reviews3() {
   const [showMore, setShowMore] = useState(false);

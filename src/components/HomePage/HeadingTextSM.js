@@ -15,7 +15,7 @@ export default function HeadingText_SM(){
     alignItems="center"
     justifyContent="center"
     textAlign="center"
-    height="100vh"
+    marginTop="100px"
   >
     <Box maxW="25rem">
       <Box maxW="20rem">

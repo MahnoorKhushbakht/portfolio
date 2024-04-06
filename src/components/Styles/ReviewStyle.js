@@ -1,8 +1,8 @@
-import { Card, CardFooter,Box,Text,Button } from '@chakra-ui/react'
+import { Card, CardFooter,Box,Button } from '@chakra-ui/react'
 import { BiLike, BiChat,BiShare } from 'react-icons/bi'
 import { ChakraProvider } from '@chakra-ui/react';
 import 'aos/dist/aos.css';
-export default function Reviews( {children}){
+export default function ReviewStyle( {children}){
   return(
     <ChakraProvider>
   <div id="review" >

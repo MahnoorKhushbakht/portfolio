@@ -63,7 +63,7 @@ export default function ProjectMD() {
                                    fontFamily: 'Helvetica, Arial',
                                  }}
                                  size='large'
-                                 variant="contained"  onClick={handleGitPortfolioClick}>Learn More</Button>
+                                 variant="contained"  onClick={handleGitPortfolioClick}>Github</Button>
                 </CardActions>
               </div>
             </Card>

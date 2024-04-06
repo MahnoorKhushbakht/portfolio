@@ -2,15 +2,14 @@ import Divider from '@mui/material/Divider';
 
 export default function DividerStyle({children,textAlign}) {
   return (
-    <Divider
+    <Divider 
     sx={{
         '&::before, &::after':{
-            content: '""',
             display: 'block',
-            borderTop: '2px solid #fff' 
+            borderTop: '2px solid white' 
         }
     }}
-    textAlign={textAlign}
+    textAlign='center'
 >
 {children}
         </Divider>
