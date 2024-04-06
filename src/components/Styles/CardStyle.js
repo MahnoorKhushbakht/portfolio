@@ -10,7 +10,7 @@ function CardStyle({ children }) {
       sx={{
         flexGrow: 1,
         display: { xs: '90%', md: '800' },
-        backgroundColor: 'transparent',
+        backgroundColor: '#6c58a3',
         width: '90%', 
         border: 'none'
       }}

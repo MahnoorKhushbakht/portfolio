@@ -30,7 +30,7 @@ export default function Background() {
                 <Box display="flex" justifyContent="center" alignItems='center' marginBottom={{ base: '100px', sm: '100px', md: '0' }} flexDirection={{ base: 'column', sm: 'column', md: 'row' }}>
                     {data.map((item, index) => (
                         <Box key={index} mx={{ base: 'auto', md: '4' }} mb={{ base: '4', md: '0' }} ml={{ base: '8', md: '4' }} mr={{ base: '8', md: '4' }}>
-                            <Card maxH="sm" maxW='xl' backgroundColor="#6c58a3" data-aos="fade-up" data-aos-delay='50'>
+                            <Card maxH="sm" maxW='xl' backgroundColor="transparent" data-aos="fade-up" data-aos-delay='50'>
                                 <CardBody>
                                     <Heading size="md" sx={{ color: 'white', fontFamily: 'Helvetica, Arial' }}>
                                         {item.heading}{' '}
