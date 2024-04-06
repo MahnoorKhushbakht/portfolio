@@ -53,8 +53,8 @@ const Contact = () => {
   const cardStyle = {
     backgroundColor: '#6c58a3',
     border: 'transparent',
-    maxWidth: '90%',
-    width: '90%',
+    maxWidth: { xs: '90%', md: '70%' },
+    width: { xs: '90%', md: '70%' },
   };
 
   const textStyle = {

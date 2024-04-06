@@ -7,7 +7,7 @@ export default function ReviewStyle( {children}){
     <ChakraProvider>
   <div id="review" >
   <Box display="flex" marginTop={'15px'} justifyContent="center" alignItems="center" flexDirection="column" >
-    <Card data-aos="fade-down" data-aos-delay='150' backgroundColor='#6c58a3' color='white' sx={{width: { base: '85%', sm: '85%', md: '60%', lg: '50%' }}}>
+    <Card data-aos="fade-down" data-aos-delay='150' backgroundColor='#6c58a3' color='white' sx={{width: { base: '90%', sm: '90%', md: '60%', lg: '50%' }}}>
     {children}
 
   <CardFooter

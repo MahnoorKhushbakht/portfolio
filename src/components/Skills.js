@@ -22,7 +22,6 @@ export default function Skills() {
           spacing={2}
           justifyContent="center"
           alignItems="center"
-          sx={{ margin: '0 2%' }}
         >
 <Cardcontent/>
         </Stack>
