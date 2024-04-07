@@ -12,8 +12,8 @@ export default function Heading() {
             display="flex"
             textAlign="center"
             alignItems="center"    
-            marginBottom={50} 
-            justifyContent="flex-start" >
+            justifyContent="flex-start" 
+            >
       <Show breakpoint='(min-width: 600px)'>
       <HeadingTextMD/>
   
