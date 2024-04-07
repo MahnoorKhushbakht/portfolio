@@ -27,7 +27,7 @@ export default function Background() {
                 </HeadinStyleSM>
             </DividerStyle>
             <ChakraProvider>
-                <Box display="flex" justifyContent="center" alignItems='center' marginBottom={{ base: '50px', sm: '50px', md: '0' }} flexDirection={{ base: 'column', sm: 'column', md: 'row' }}>
+                <Box display="flex" justifyContent="center" alignItems='center' marginBottom='50px' flexDirection={{ base: 'column', sm: 'column', md: 'row' }}>
                     {data.map((item, index) => (
                         <Box key={index} mx={{ base: 'auto', md: '4' }} mb={{ base: '4', md: '0' }} ml={{ base: '2', md: '4' }} mr={{ base: '2', md: '4' }}>
                             <Card width='100%' height='100%' border='1px solid white' backgroundColor="transparent" data-aos="fade-up" data-aos-delay='50'>

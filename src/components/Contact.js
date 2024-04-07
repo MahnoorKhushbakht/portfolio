@@ -64,7 +64,7 @@ const Contact = () => {
 
   return (
     <div id='contact' >
-      <Box display="flex" flexDirection={'column'} justifyContent="center" alignItems="center"  marginTop='100px'  marginBottom='20px'>
+      <Box display="flex" flexDirection={'column'} justifyContent="center" alignItems="center"  marginBottom='50px'>
         <Card
           variant="outlined"
           sx={cardStyle}
@@ -232,12 +232,12 @@ const Contact = () => {
                     open={isSuccess}
                     autoHideDuration={6000}
                     onClose={() => setIsSuccess(false)}
-                    anchorOrigin={{ vertical: 'top', horizontal: 'center' }} 
+                   anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
                   >         
                     <Alert severity="success" 
     sx={{
-      backgroundColor: '#6c58a3',  
-      color: 'white', 
+      backgroundColor: 'white',  
+      color: '#6c58a3', 
       fontFamily: 'Helvetica, Arial',          
       '& .MuiAlert-icon': {
         color: 'green',        
@@ -252,13 +252,13 @@ const Contact = () => {
                     open={isError}
                     autoHideDuration={6000}
                     onClose={() => setIsError(false)}
-                    anchorOrigin={{ vertical: 'top', horizontal: 'center' }} 
+                   anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
                   >
                       <Alert
     severity="error"
     sx={{
-      backgroundColor: '#6c58a3',  
-      color: 'white',
+      backgroundColor: 'white',  
+      color: '#6c58a3', 
       fontFamily: 'Helvetica, Arial',           
       '& .MuiAlert-icon': {
         color: 'red',  

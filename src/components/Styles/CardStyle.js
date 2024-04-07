@@ -9,7 +9,6 @@ function CardStyle({ children }) {
       variant="outlined"
       sx={{
         flexGrow: 1,
-        display: { xs: '90%', md: '800' },
         backgroundColor: '#6c58a3',
         border:'none',
         width: '100%'
