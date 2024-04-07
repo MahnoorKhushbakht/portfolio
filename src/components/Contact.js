@@ -63,8 +63,8 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' height='100vh'>
-      <Box display="flex" flexDirection={'column'} justifyContent="center" alignItems="center"  maxHeight={'100vh'} minHeight="100vh" marginTop='100px'  marginBottom='20px'>
+    <div id='contact' >
+      <Box display="flex" flexDirection={'column'} justifyContent="center" alignItems="center"  marginTop='100px'  marginBottom='20px'>
         <Card
           variant="outlined"
           sx={cardStyle}

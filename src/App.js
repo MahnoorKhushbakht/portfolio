@@ -12,7 +12,7 @@ import Skills from './components/Skills'
 
 function App() {
   return (
-      <div className="App">
+      <div className="App" style={{ display: 'flex', justifyContent: 'space-between',flexDirection:'column' }}>
         <Header/>
         <Home/>
         <Background/>
