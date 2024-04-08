@@ -19,7 +19,7 @@ export default function HomePage() {
         justifyContent: "flex-start",
         flexDirection:'column',
         marginBottom: '50px',
-        marginLeft: { base: '30px', md: '110px' }, 
+        marginLeft: { base: '25px', md: '110px' }, 
       }}
       data-aos="fade-down"
       data-aos-delay='100'
@@ -28,7 +28,7 @@ export default function HomePage() {
       <Box sx={{ width: { base: '95%', md: '70%' }, marginTop: ['5%', '5%'] }}> 
       <TagLine/>
         <Heading
-          sx={{ fontSize: { base: '32px', md: '50px' }, textAlign: 'left', fontFamily: 'Helvetica, Arial' }}
+          sx={{ fontSize: { base: '25px', md: '50px' }, textAlign: 'left', fontFamily: 'Helvetica, Arial' }}
           lineHeight="tall"
           className="animate__animated animate__fadeInUp"
           color='white'
@@ -44,7 +44,7 @@ export default function HomePage() {
           </Highlight>
         </Heading>
         <Text
-          sx={{ fontSize: { base: '32px', md: 'px' }, fontFamily: 'Helvetica, Arial' }}
+          sx={{ fontSize: { base: '25px', md: '50px' }, fontFamily: 'Helvetica, Arial' }}
           className="animate__animated animate__fadeInUp"
           color='white'
         >
