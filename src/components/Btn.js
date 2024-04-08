@@ -40,11 +40,11 @@ export default function Btn() {
           marginBottom='20px'
           fontFamily="Helvetica, Arial"
           sx={{
-           background: '#6c58a3',
-            color: 'white',
+            background: 'white',
+            color: '#6c58a3',
             '&:hover': {
-              background: 'white',
-              color: '#6c58a3',
+              background: '#6c58a3',
+              color: 'white',
             },
           }}
           variant='contained'
@@ -70,11 +70,11 @@ export default function Btn() {
           marginLeft='8px'
           fontFamily="Helvetica, Arial"
           sx={{
-           background: '#6c58a3',
-            color: 'white',
+            background: 'white',
+            color: '#6c58a3',
             '&:hover': {
-              background: 'white',
-              color: '#6c58a3',
+              background: '#6c58a3',
+              color: 'white',
             },
           }}
         >
