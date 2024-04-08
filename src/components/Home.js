@@ -19,7 +19,7 @@ export default function HomePage() {
         justifyContent: "flex-start",
         flexDirection:'column',
         marginBottom: '50px',
-        marginLeft: { sm: '25px', md: '110px' }, 
+        marginLeft: { base: '30px', md: '110px' }, 
       }}
       data-aos="fade-down"
       data-aos-delay='100'
